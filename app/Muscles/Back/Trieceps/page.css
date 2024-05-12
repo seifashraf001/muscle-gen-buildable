@@ -1,0 +1,35 @@
+.workout-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-basis: 10px;
+}
+
+.workout {
+    width: 20%;
+    margin: 10px;
+}
+
+li {
+    list-style-type: decimal;
+}
+
+@media (min-width: 350px) and (max-width: 768px) {
+    .workout-container {
+        flex-direction: column;
+    }
+    .workout {
+        width: 80%;
+        /* height: 25%; */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .workout {
+        flex-grow: 2;
+        width: 40%;
+    }
+}

@@ -1,0 +1,44 @@
+.workout-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-grow: 3;
+}
+
+.workout {
+    width:22%;
+    margin: 10px;
+}
+
+li {
+    list-style-type: decimal;
+}
+
+@media (max-width: 350px) {
+    .workout-container {
+        flex-direction: column;
+    }
+    .workout {
+        width: 75%;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 768px) {
+    .workout-container {
+        flex-direction: column;
+    }
+    .workout {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .workout {
+        flex-grow: 4;
+        flex-shrink: 3;
+        width: 40%;
+    }
+}

@@ -1,0 +1,28 @@
+.content {
+    border: 5px solid transparent;
+    box-shadow: 0 0 60px rgb(255, 0, 0);
+    transition: box-shadow 0.3s ease-in-out; /* Only transition the box-shadow */
+  }
+  
+  @keyframes changeShadow {
+    0% {
+      box-shadow: 0 0 50px rgb(255, 140, 0); /* Original shadow color */
+    }
+    25% {
+      box-shadow: 0 0 50px rgb(255, 255, 255); /* Green shadow color */
+    }
+    50% {
+      box-shadow: 0 0 50px #ff0000; /* Blue shadow color */
+    }
+    75% {
+      box-shadow: 0 0 50px #ffffff; /* Yellow shadow color */
+    }
+    100% {
+      box-shadow: 0 0 50px rgb(164, 90, 0); /* Red shadow color */
+    }
+  }
+  
+  .content:hover {
+    animation: changeShadow 2s infinite; /* Apply the animation on hover */
+  }
+  

@@ -28,7 +28,7 @@ const Card = () => {
                   className="rounded-md transition bg-gradient-to-r mx-sm:px-4 max-sm:py-1.5 max-sm:text-sm
                   from-red-900 via-red-700 to-orange-700 px-5 py-2.5 text-lg font-bold text-white shadow
                    hover:border-black hover:text-gray-400"
-                  href="/Header/workout/mobility"
+                  href="/Header/workout/cardio"
                 >
                   Enter
                 </a>
@@ -58,7 +58,7 @@ const Card = () => {
                   className="rounded-md transition bg-gradient-to-r mx-sm:px-4 max-sm:py-1.5 max-sm:text-sm
                   from-red-900 via-red-700 to-orange-700 px-5 py-2.5 text-lg font-bold text-white shadow
                    hover:border-black hover:text-gray-400"
-                  href="/Header/workout/mobility"
+                  href="/Muscles"
                 >
                   Enter
                 </a>

@@ -1,13 +1,11 @@
 'use client';
 
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { AuthProvider } from "./Providers";
 import {SessionProvider} from 'next-auth/react';
-
 
 
 
@@ -19,6 +17,7 @@ export default function RootLayout({ children }) {
 
 <SessionProvider>
      <html lang="en">
+      <title>Muscle Generator</title>
       <body className={inter.className}>
 
         <Header/>

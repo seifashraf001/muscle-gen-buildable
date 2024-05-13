@@ -77,7 +77,7 @@ const Card = () => {
 
           <div>
            <p className='text-gray-300 text-[1rem] max-sm:text-[0.8rem]'>
-           Calisthenics is a form of exercise that uses a person's body weight and requires little to no equipment. Examples of calisthenic exercises include pushups, crunches, and burpees. There are many health benefits to calisthenics.
+           Calisthenics is a form of exercise that uses a person body weight and requires little to no equipment. Examples of calisthenic exercises include pushups, crunches, and burpees. There are many health benefits to calisthenics.
             </p>
           </div>
 

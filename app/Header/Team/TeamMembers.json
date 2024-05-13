@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Youssef Mohamed",
+    "role": "Frontend Developer",
+    "imgPath": "/img1.jpg",
+    "socialMedia": [
+      { "name": "Facebook", "link": "https://www.facebook.com/" },
+      { "name": "Instagram", "link": "https://www.instagram.com/" },
+      { "name": "GitHub", "link": "https://github.com/" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Youssef Mohamed",
+    "role": "Frontend Developer",
+    "imgPath": "/img2.jpg",
+    "socialMedia": [
+      { "name": "Facebook", "link": "https://www.facebook.com/" },
+      { "name": "Instagram", "link": "https://www.instagram.com/" },
+      { "name": "GitHub", "link": "https://github.com/" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Youssef Mohamed",
+    "role": "Frontend Developer",
+    "imgPath": "/img3.jpg",
+    "socialMedia": [
+      { "name": "Facebook", "link": "https://www.facebook.com/" },
+      { "name": "Instagram", "link": "https://www.instagram.com/" },
+      { "name": "GitHub", "link": "https://github.com/" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Youssef Mohamed",
+    "role": "Frontend Developer",
+    "imgPath": "/img4.jpg",
+    "socialMedia": [
+      { "name": "Facebook", "link": "https://www.facebook.com/" },
+      { "name": "Instagram", "link": "https://www.instagram.com/" },
+      { "name": "GitHub", "link": "https://github.com/" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Youssef Mohamed",
+    "role": "Frontend Developer",
+    "imgPath": "/img5.jpg",
+    "socialMedia": [
+      { "name": "Facebook", "link": "https://www.facebook.com/" },
+      { "name": "Instagram", "link": "https://www.instagram.com/" },
+      { "name": "GitHub", "link": "https://github.com/" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Youssef Mohamed",
+    "role": "Frontend Developer",
+    "imgPath": "/img6.jpg",
+    "socialMedia": [
+      { "name": "Facebook", "link": "https://www.facebook.com/" },
+      { "name": "Instagram", "link": "https://www.instagram.com/" },
+      { "name": "GitHub", "link": "https://github.com/" }
+    ]
+  }
+]

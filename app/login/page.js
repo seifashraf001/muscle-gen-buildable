@@ -36,6 +36,11 @@ function Login() {
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({});
   const [invalidCredentials, setInvalidCredentials] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
 
   const { data: session } = useSession();
 
@@ -137,49 +142,29 @@ function Login() {
             </div>
           </div>
 
-          <div>
-            <label htmlFor="password" className="sr-only">
-              Password
-            </label>
+        <div>
+        <div className="relative text-black">
+          <input
+            type={showPassword ? 'text' : 'password'}
+            name="password"
+            value={password}
+            onChange={handleChange}
+            className="w-full rounded-lg border-white p-4 pe-12 text-sm shadow-sm"
+            placeholder="Enter password"
+          />
+          <button
+            type="button"
+            className="absolute inset-y-0 right-0 px-3 flex items-center"
+            onClick={togglePasswordVisibility}
+          >
+            {showPassword ? <img className='w-5 opacity-50' src='hide-password.svg' /> : <img className='w-5 opacity-50' src='show-password.svg' /> }
+          </button>
+        </div>
 
-            <div className="relative text-black">
-              <input
-                type="password"
-                name="password"
-                value={password}
-                onChange={handleChange}
-                className="w-full rounded-lg border-white p-4 pe-12 text-sm shadow-sm"
-                placeholder="Enter password"
-              />
-
-              {errors.password && (
-                <p className="text-red-500 text-sm mt-1">{errors.password}</p>
-              )}
-
-              <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="size-4 text-gray-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                  />
-                </svg>
-              </span>
-            </div>
-          </div>
+        {errors.password && (
+          <p className="text-red-500 text-sm mt-1">{errors.password}</p>
+        )}
+      </div>
 
           { invalidCredentials && (
             <div>

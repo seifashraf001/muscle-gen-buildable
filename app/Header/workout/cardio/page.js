@@ -6,9 +6,9 @@ import './page.css';
 const card = () => {
 
     return (
-    <div className='flex w-full justify-center py-11 gap-24 flex-wrap'>
-      <div className='rounded-2xl  w-[600px] overflow-hidden shadow-md shadow-white content'>
-        <img className='h-[500px] w-[600px]'  src='/beginner.jpg' />
+    <div className='flex w-full justify-center py-11 gap-14 flex-wrap'>
+      <div className='rounded-2xl  w-[400px] overflow-hidden shadow-md shadow-white content'>
+        <img className='h-[300px] w-[600px]'  src='/beginner.jpg' />
 
         <div className='p-7 text-xl text-white'> 
           <h1 className='font-extrabold mb-5'>Beginner level</h1>
@@ -16,7 +16,7 @@ const card = () => {
             <hr></hr>
 
           <div className='mt-4'>
-           <p className='text-gray-300'>
+          <p className='text-gray-300 text-[0.85rem]'>
            20 Min BEGINNER CARDIO Workout For Fat Burn <br />
           (No Equipment, At Home)
             </p>
@@ -36,8 +36,8 @@ const card = () => {
         </div>
       </div>
 
-      <div className='rounded-2xl w-[600px] overflow-hidden shadow-md shadow-white content'>
-        <img className='h-[500px] w-[600px]' src='/Intermediate.png' />
+      <div className='rounded-2xl w-[400px] overflow-hidden shadow-md shadow-white content'>
+        <img className='h-[300px] w-[600px]' src='/Intermediate.png' />
 
         <div className='p-7 text-xl text-white'> 
           <h1 className='font-extrabold mb-5'>intermediate</h1>
@@ -45,7 +45,7 @@ const card = () => {
             <hr></hr>
 
           <div className='mt-4'>
-            <p className='text-gray-300'>
+          <p className='text-gray-300 text-[0.85rem]'>
             Low impact, high intensity intermediate home cardio workout
             </p>
           </div>
@@ -65,8 +65,8 @@ const card = () => {
         </div>
       </div>
 
-      <div className='rounded-2xl w-[600px] overflow-hidden shadow-md shadow-white content'>
-        <img className='h-[500px] w-[600px]' src='/advanced.png' />
+      <div className='rounded-2xl w-[400px] overflow-hidden shadow-md shadow-white content'>
+        <img className='h-[300px] w-[600px]' src='/advanced.png' />
 
         <div className='p-7 text-xl text-white'> 
           <h1 className='font-extrabold mb-5'>Advanced</h1>
@@ -74,7 +74,7 @@ const card = () => {
             <hr></hr>
 
           <div className='mt-4'>
-           <p className='text-gray-300'>
+          <p className='text-gray-300 text-[0.85rem]'>
            40 Min FAT BURNING WORKOUT [Full Body HIIT CARDIO] No Equipment, No Repeats
             </p>
           </div>
@@ -94,8 +94,8 @@ const card = () => {
         </div>
       </div>
 
-      <div className='rounded-2xl w-[600px] overflow-hidden shadow-md shadow-white content'>
-        <img className='h-[500px] w-[600px]'  src='/hit.png' />
+      <div className='rounded-2xl w-[400px] overflow-hidden shadow-md shadow-white content'>
+        <img className='h-[300px] w-[600px]'  src='/hit.png' />
 
         <div className='p-7 text-xl text-white'> 
           <h1 className='font-extrabold mb-5'>HIT Cardio</h1>
@@ -103,7 +103,7 @@ const card = () => {
             <hr></hr>
 
           <div className='mt-4'>
-           <p className='text-gray-300 '>
+          <p className='text-gray-300 text-[0.85rem]'>
            20 Min Fat Burning HIIT Workout -  No Equipment <br></br>
               No Repeat
 

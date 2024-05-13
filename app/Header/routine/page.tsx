@@ -106,9 +106,9 @@ export default function Home() {
   return (
     <>
      
-      <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
-        <div className="grid grid-cols-10">
-          <div className="col-span-8 text-white  rounded-xl">
+     <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
+        <div className="grid grid-cols rounded-xl">
+          <div className="col-span-12 text-white  max-sm:text-xs  rounded-xl">
             <FullCalendar
               plugins={[
                 dayGridPlugin,
@@ -116,9 +116,9 @@ export default function Home() {
                 timeGridPlugin
               ]}
               headerToolbar={{
-                left: 'prev,next today myCustomButton',
+                left: 'prev,next',
                 center: 'title',
-                right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                right: 'timeGridWeek,timeGridDay'
               }}
               events={allEvents as EventSourceInput}
               nowIndicator={true}
@@ -131,11 +131,11 @@ export default function Home() {
               eventClick={(data) => handleDeleteModal(data)}
             />
           </div>
-          <div id="draggable-el" className="mx-auto ml-8 w-full border-2 p-2 rounded-md mt-16 h-fit sm:w-fit  bg-black text-white">
-            <h1 className="font-bold text-lg text-center">Drag Event</h1>
+          <div id="draggable-el" className="flex flex-wrap border-2 rounded-md bg-black text-white
+              w-fit h-fit max-sm:w-[70%]">
             {events.map(event => (
               <div
-                className="fc-event border-2 p-1 m-2 w-full rounded-md ml-auto text-center  cursor-move bg-gradient-to-r from-black via-red-700 to-red-900 text-white "
+                className="fc-event border-2 p-1 m-2 w-20 rounded-md max-sm:text-xs text-center cursor-move bg-gradient-to-r from-black via-red-700 to-red-900 text-white "
                 title={event.title}
                 key={event.id}
               >

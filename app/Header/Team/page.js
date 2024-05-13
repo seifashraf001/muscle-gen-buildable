@@ -1,59 +1,28 @@
 "use client";
-import React, { useEffect } from "react";
-
+import React, { useState } from "react";
 import "./page.css";
-
-// Assets
 import FacebookIcon from "./icons/FacebookIcon";
 import InstagramIcon from "./icons/InstagramIcon";
 import GithubIcon from "./icons/GithubIcon";
-
-// Mock
 import teamMembers from "./TeamMembers.json";
 
 const Team = () => {
-  useEffect(() => {
-    const initializeHoverEffect = () => {
-      const imgbx = document.querySelectorAll(".imgbx");
-      const contentbx = document.querySelectorAll(".contentbx");
+  const [activeIndex, setActiveIndex] = useState(0);
 
-      imgbx.forEach((item) => {
-        item.addEventListener("mouseover", function (event) {
-          contentbx.forEach((content) => {
-            content.classList.remove("active");
-          });
-          imgbx.forEach((img) => {
-            img.classList.remove("active");
-          });
-          const targetId = this.dataset.id;
-          const targetContent = document.getElementById(targetId);
-          if (targetContent) {
-            targetContent.classList.add("active");
-          }
-          this.classList.add("active");
-        });
-      });
-    };
-
-    initializeHoverEffect();
-
-    return () => {
-      const imgbx = document.querySelectorAll(".imgbx");
-      imgbx.forEach((item) => {
-        item.removeEventListener("mouseover", initializeHoverEffect);
-      });
-    };
-  }, []);
+  const handleMouseOver = (index) => {
+    setActiveIndex(index);
+  };
 
   return (
     <div className="container">
       <div className="icon">
         {teamMembers.map((member, index) => (
           <div
-            className={`imgbx ${index === 0 ? "active" : ""}`}
+            className={`imgbx ${index === activeIndex ? "active" : ""}`}
             style={{ "--i": member.id }}
             data-id={`content${member.id}`}
             key={member.id}
+            onMouseOver={() => handleMouseOver(index)}
           >
             <img src={member.imgPath} alt="" />
           </div>
@@ -62,7 +31,7 @@ const Team = () => {
       <div className="content">
         {teamMembers.map((member, index) => (
           <div
-            className={`contentbx ${index === 0 ? "active" : ""}`}
+            className={`contentbx ${index === activeIndex ? "active" : ""}`}
             id={`content${member.id}`}
             key={member.id}
           >

@@ -1,0 +1,41 @@
+/* index.css or App.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+/* card.css */
+
+.content {
+  border: 5px solid transparent;
+  box-shadow: 0 0 12px rgb(255, 0, 0);
+  transition: box-shadow 5s ease-in-out; /* Only transition the box-shadow */
+}
+
+@keyframes changeShadow {
+  0% {
+    box-shadow: 0 0 30px rgb(193, 64, 12); /* Original shadow color */
+  }
+
+  50% {
+    box-shadow: 0 0 30px #ff0000; /* Blue shadow color */
+  }
+
+  100% {
+    box-shadow: 0 0 30px rgb(193, 64, 12); /* Red shadow color */
+  }
+}
+
+.content:hover {
+  animation: changeShadow 2s infinite; /* Apply the animation on hover */
+}

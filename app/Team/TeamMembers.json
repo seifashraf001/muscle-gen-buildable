@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Youssef Mohamed",
+    "role": "Frontend Developer",
+    "imgPath": "/img1.jpg",
+    "socialMedia": [
+      { "name": "Facebook", "link": "https://www.facebook.com/profile.php?id=100015806417176" },
+      { "name": "Instagram", "link": "https://www.instagram.com/youssef_mohamed7100/" },
+      { "name": "GitHub", "link": "https://github.com/Carbona777" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Seif Aldeen Ashraf",
+    "role": "Backend Developer",
+    "imgPath": "/img2.jpg",
+    "socialMedia": [
+      { "name": "Facebook", "link": "https://www.facebook.com/profile.php?id=100045195483234" },
+      { "name": "Instagram", "link": "https://www.instagram.com/goodguyseif/" },
+      { "name": "GitHub", "link": "https://github.com/seifashraf001" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Fares Ashraf",
+    "role": "Frontend Developer",
+    "imgPath": "/img3.jpg",
+    "socialMedia": [
+      { "name": "Facebook", "link": "https://www.facebook.com/fares.asraf.3?mibextid=ZbWKwL" },
+      { "name": "Instagram", "link": "https://www.instagram.com/faresasraf?utm_source=qr&igsh=MTY2anh3ZTBhb3JrZw==" },
+      { "name": "GitHub", "link": "https://github.com/fares273" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Mohammed Saeed",
+    "role": "Frontend Developer",
+    "imgPath": "/img4.jpg",
+    "socialMedia": [
+      { "name": "Facebook", "link": "https://www.facebook.com/share/M47Rs2RVXH2DPY4a/?mibextid=qi2Omg" },
+      { "name": "Instagram", "link": "https://www.instagram.com/mohamed_saeed.o_o?igsh=MTRsb3BsN3czdXl2eQ==" },
+      { "name": "GitHub", "link": "https://github.com/mohamed-saeed10" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Hassan Mohamed",
+    "role": "Frontend Developer",
+    "imgPath": "/img5.jpg",
+    "socialMedia": [
+      { "name": "Facebook", "link": "https://www.facebook.com/share/1Wji5KsvsDskyPy7/?mibextid=qi2Omg" },
+      { "name": "Instagram", "link": "https://www.instagram.com/__hassanmahmoud_/" },
+      { "name": "GitHub", "link": "https://github.com/hassan-912" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Ahmed Samir",
+    "role": "Frontend Developer",
+    "imgPath": "/img6.jpg",
+    "socialMedia": [
+      { "name": "Facebook", "link": "https://www.facebook.com/profile.php?id=100005275145270&mibextid=ZbWKwL" },
+      { "name": "Instagram", "link": "https://www.instagram.com/ahmedsamir6368?igsh=MXZpMmR4ZTQ2bGlrNg==" },
+      { "name": "GitHub", "link": "https://github.com/" }
+    ]
+  }
+]

@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255,255, 255;
+  --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 255, 255, 255;
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -15,16 +14,11 @@
     --background-start-rgb: 255, 255, 255;
     --background-end-rgb: 255, 255, 255;
   }
-  
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
     rgb(var(--background-start-rgb));
 }
 
@@ -34,10 +28,9 @@ body {
   }
 }
 
-
-.body-map__muscle#chest:hover path, 
-.body-map__muscle#obliques:hover path, 
-.body-map__muscle#forearms:hover path, 
+.body-map__muscle#chest:hover path,
+.body-map__muscle#obliques:hover path,
+.body-map__muscle#forearms:hover path,
 .body-map__muscle#biceps:hover path,
 .body-map__muscle#abdominals:hover path,
 .body-map__muscle#shoulders:hover path,
@@ -49,7 +42,7 @@ body {
 .body-map__muscle#glutes:hover path,
 .body-map__muscle#lats:hover path,
 .body-map__muscle#traps_middle:hover path,
-.body-map__muscle#traps:hover path ,
-.body-map__muscle#triceps:hover path{
+.body-map__muscle#traps:hover path,
+.body-map__muscle#triceps:hover path {
   fill: crimson;
 }

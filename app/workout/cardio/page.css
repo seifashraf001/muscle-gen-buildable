@@ -1,0 +1,106 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+.container {
+  background: black;
+  padding: 15px 9%;
+  padding-bottom: 100px;
+}
+
+.container .heading {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #dd0a0a;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+}
+
+.container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+}
+
+.container .box-container .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.container .box-container .box img {
+  height: 160px;
+  width: 250px;
+  margin: auto;
+}
+
+.container .box-container .box h3 {
+  color: #444;
+  font-size: 22px;
+  padding: 10px 0;
+}
+
+.container .box-container .box p {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.container .box-container .box .btn {
+  margin-top: 10px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover {
+  letter-spacing: 1px;
+}
+
+.container .box-container .box:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+.content {
+  border: 5px solid transparent;
+  box-shadow: 0 0 12px rgb(255, 0, 0);
+  transition: box-shadow 0.3s ease-in-out; /* Only transition the box-shadow */
+}
+
+@keyframes changeShadow {
+  0% {
+    box-shadow: 0 0 30px rgb(193, 64, 12); /* Original shadow color */
+  }
+
+  50% {
+    box-shadow: 0 0 30px #ff0000; /* Blue shadow color */
+  }
+
+  100% {
+    box-shadow: 0 0 30px rgb(193, 64, 12); /* Red shadow color */
+  }
+}
+
+.content:hover {
+  animation: changeShadow 2s infinite; /* Apply the animation on hover */
+}

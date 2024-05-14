@@ -18,7 +18,7 @@
     box-shadow: 0 0 50px #ffffff; /* Yellow shadow color */
   }
   100% {
-    box-shadow: 0 0 50px rgb(164, 90, 0); /* Red shadow color */
+    box-shadow: 0 0 50px rgb(255, 154, 32); /* Red shadow color */
   }
 }
 

@@ -100,8 +100,8 @@
   position: absolute;
   inset: 120px;
   border: 4px solid transparent;
-  border-left: 4px solid #ff1d50;
-  border-right: 4px solid #fff;
+  border-left: 4px solid #801d1d;
+  border-right: 4px solid #e5e7eb;
   border-radius: 50%;
   animation: animate_02 2.5s linear infinite;
   z-index: 1;

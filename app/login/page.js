@@ -1,11 +1,10 @@
-'use client'
-import { signIn } from 'next-auth/react';
-import Link from 'next/link';
-import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { useSession } from 'next-auth/react';
-import './page.css'
-
+"use client";
+import { signIn } from "next-auth/react";
+import Link from "next/link";
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
+import "./page.css";
 
 // Validation function
 function validateLoginForm(email, password) {
@@ -21,7 +20,7 @@ function validateLoginForm(email, password) {
   // Password validation
   if (!password) {
     errors.password = "Password is required";
-  } 
+  }
   // else if (password.length < 6) {
   //   errors.password = "Password must be at least 6 characters";
   // } else if (!/(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{6,}/.test(password)) {
@@ -32,10 +31,10 @@ function validateLoginForm(email, password) {
 }
 
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
-  const [invalidCredentials, setInvalidCredentials] = useState('');
+  const [invalidCredentials, setInvalidCredentials] = useState("");
 
   const { data: session } = useSession();
 
@@ -43,13 +42,13 @@ function Login() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (name === 'email') setEmail(value);
-    else if (name === 'password') setPassword(value);
+    if (name === "email") setEmail(value);
+    else if (name === "password") setPassword(value);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (!email || !password) {
       setErrors(validateLoginForm(email, password));
       return;
@@ -58,31 +57,31 @@ function Login() {
     }
 
     try {
-      const res = await signIn('credentials', {
+      const res = await signIn("credentials", {
         email,
         password,
-        redirect: false
+        redirect: false,
       });
 
       if (res.error) {
-        setInvalidCredentials('Invalid email or password');
+        setInvalidCredentials("Invalid email or password");
         return;
       }
 
-      router.replace('/');
+      router.replace("/");
     } catch (error) {
       console.log(error);
     }
   };
 
   if (session) {
-    router.replace('/');
+    router.replace("/");
     return null; // Render nothing if redirecting
   }
 
   return (
     <div className="mx-auto max-w-screen-xl px-4 py-20 sm:px-6 lg:px-8">
-<div class="mx-auto max-w-lg content rounded-lg">
+      <div class="mx-auto max-w-lg content rounded-lg">
         <h1 className="text-center text-2xl font-bold bg-gradient-to-r from-orange-300 via-red-700 to-red-900 text-transparent bg-clip-text sm:text-3xl">
           Get started
         </h1>
@@ -114,9 +113,7 @@ function Login() {
                 placeholder="Enter email"
               />
 
-              {errors.email && (
-                <p className="text-red-500 text-sm mt-1">{errors.email}</p>
-              )}
+              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
 
               <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
                 <svg
@@ -152,9 +149,7 @@ function Login() {
                 placeholder="Enter password"
               />
 
-              {errors.password && (
-                <p className="text-red-500 text-sm mt-1">{errors.password}</p>
-              )}
+              {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password}</p>}
 
               <span className="absolute inset-y-0 end-0 grid place-content-center px-4">
                 <svg
@@ -181,11 +176,11 @@ function Login() {
             </div>
           </div>
 
-          { invalidCredentials && (
+          {invalidCredentials && (
             <div>
-               <div className="bg-red-900 transition text-white text-center text-sm py-1 px-3 rounded-md mt-8">
-                 {invalidCredentials} 
-               </div>
+              <div className="bg-red-900 transition text-white text-center text-sm py-1 px-3 rounded-md mt-8">
+                {invalidCredentials}
+              </div>
             </div>
           )}
           <button

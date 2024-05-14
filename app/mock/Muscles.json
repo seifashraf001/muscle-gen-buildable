@@ -1,0 +1,646 @@
+[
+  {
+    "id": "Abdominals",
+    "data": [
+      {
+        "imgSrc": "https://gymvisual.com/img/p/4/8/0/2/4802.gif",
+        "name": "Barbell Situp",
+        "steps": [
+          "Hold the bar with a slightly wider than shoulder width grip. Push the bar up toward the ceiling and maintain that elbow extension.",
+          "Flex your abs and sit-up. Aim to get your torso vertical while maintaining the barbell overhead.",
+          "Pick your knees up off the ground. Hold in this position with a flat back."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/2/1/5/4/8/21548.gif",
+        "name": "Dumbbell Russian Twist",
+        "steps": [
+          "Sit on the floor and flex your knees and hips to a 90 degree angle.",
+          "Your feet should be hovering off the ground. (If that's too hard start with heels on the floor)",
+          "Rotate your upper spine to engage your obliques."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/5/8/5/9/5859.gif",
+        "name": "Lying Leg Raise",
+        "steps": [
+          "Lay on your back with your arms palms down on either side.",
+          "Slowly raise your legs to a 90° angle, pause at this position, or as high as you can reach your legs, and then slowly lower your legs back down.",
+          "Duration of these movements should be slow so that you do not utilize momentum, enabling you to get the most out of the exercise."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/2/4/0/0/3/24003.gif",
+        "name": "Hand Plank",
+        "steps": [
+          "Start in a kneeling position with your hands planted on the ground.",
+          "Pick your knees up off the ground. Hold in this position with a flat back.",
+          "Hold the bar with a slightly wider than shoulder width grip. Push the bar up toward the ceiling and maintain that elbow extension."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Biceps",
+    "data": [
+      {
+        "imgSrc": "https://gymvisual.com/img/p/6/5/9/2/6592.gif",
+        "name": "Chin Up",
+        "steps": [
+          "Grab the bar shoulder width apart with a supinated grip (palms facing you)",
+          "With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.",
+          "Slowly return to starting position. Repeat."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/2/1/8/3/5/21835.gif",
+        "name": "Cable Bayesian Curl",
+        "steps": [
+          "Use a handle attachment. The cable should be set all the way to the bottom of the machine.",
+          "Face away from the cable machine.",
+          "Stagger your stance so you have a better base of support. Face your palm forward. Flex at the elbow and extend."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/5/9/1/6/5916.gif",
+        "name": "Dumbbell Curl",
+        "steps": [
+          "Stand up straight with a dumbbell in each hand at arm's length.",
+          "Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.",
+          "Lower to original position and repeat with opposite arm."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/5/0/4/6/5046.gif",
+        "name": "Dumbbell Hammer Curls",
+        "steps": [
+          "Hold the dumbbells with a neutral grip (thumbs facing the ceiling).",
+          "Slowly lift the dumbbell up to chest height.",
+          "Return to starting position and repeat."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Claves",
+    "data": [
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/03/Decline-Barbell-Bench-Press.gif",
+        "name": "Decline Barbell Bench",
+        "steps": [
+          "Lay flat on the bench with your feet on the ground. With straight arms unrack the bar.",
+          "Lower the bar to your mid chest",
+          "Raise the bar until you have locked your elbows."
+        ]
+      },
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Pec-Deck-Fly.gif",
+        "name": "Machine Pec Fly",
+        "steps": [
+          "Adjust seat height so handles align with chest. Sit and grip handles with elbows slightly bent.",
+          "Slowly bring handles together in front, keeping tension. Focus on squeezing chest muscles.",
+          "Return handles to starting position with controlled motion. Keep chest up throughout. Repeat for reps."
+        ]
+      },
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/06/Push-Up-Plus.gif",
+        "name": "Push Up",
+        "steps": [
+          "Place your hands firmly on the ground, directly under shoulders.",
+          "Flatten your back so your entire body is straight and slowly lower your body",
+          "Draw shoulder blades back and down, keeping elbows tucked close to your body, Exhale as you push back to the starting position."
+        ]
+      },
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Incline-Dumbbell-Press.gif",
+        "name": "Dumbbell Incline Bench Press",
+        "steps": [
+          "Lay flat on the incline bench with your feet on the ground. Raise the dumbbells until you have straight arms.",
+          "Lower the dumbbells to your mid chest",
+          "Raise the dumbbells until you have locked your elbows."
+        ]
+      },
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Fly.gif",
+        "name": "Dumbbell Fly",
+        "steps": [
+          "Dumbbell fly exercise targets the sternal heads of your pectoralis major muscles, which are found in your chest, but also strengthens your triceps, deltoids, biceps, wrist flexors and brachialis muscles.",
+          "Dumbbell fly exercise will help you build fully defined pectorals. It is one of the best exercises you should do If you want a defined and more shred chest muscle."
+        ]
+      },
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/06/Chest-Dips.gif",
+        "name": "Chest Dips",
+        "steps": [
+          "Stand facing a set of parallel bars with your hands shoulder-width apart and palms facing inward.",
+          "Lower your body by bending your elbows and leaning forward slightly, keeping your elbows close to your sides.",
+          "Push yourself back up to the starting position by straightening your arms, exhaling as you do so."
+        ]
+      },
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/08/Lying-Chest-Press-Machine.gif",
+        "name": "Lying Chest Press Machine",
+        "steps": [
+          "Push the handles upwards until your arms are fully extended, but be careful not to lock your elbows, this will be your starting position.",
+          "Slowly lower the handles back towards your chest, keeping your elbows at a 90-degree angle.",
+          "Push the handles back up to the starting position, using your chest muscles to drive the movement."
+        ]
+      },
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2023/06/Incline-Chest-Fly-Machine.gif",
+        "name": "Incline Chest Fly Machine",
+        "steps": [
+          "Sit on the machine with your back flat against the backrest and your feet firmly planted on the floor.",
+          "Keeping a slight bend in your elbows, exhale and bring the handles or levers together in front of you.",
+          "Inhale and slowly reverse the movement, bringing your arms back to the starting position in a controlled manner."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Chest",
+    "data": [
+      {
+        "imgSrc": "https://gymvisual.com/img/p/5/3/4/2/5342.gif",
+        "name": "Machine Standing Calf Raises",
+        "steps": [
+          "Adjust the machine in accordance with your height and place your shoulders underneath the padded lever.",
+          "The balls of your feet should be supporting your weight on the calve block, your heels extending off of it.",
+          "Extend your heels upwards while keeping your knees stationary, and pause at the contracted position."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/1/2/5/8/0/12580.gif",
+        "name": "Machine Seated Calf Raises",
+        "steps": [
+          "Get comfortable on the machine, then place your lower thighs beneath the padded lever. Place your toes and the balls of your feet onto the foot supports.",
+          "Prevent the weight from slipping forward by gripping the handles, and release the safety bar. Lower the weight until your calves are extended.",
+          "Push your heels up to lift the padded lever and hold the contracted position, then slowly lower back down to the starting position. Repeat."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/6/6/3/5/6635.gif",
+        "name": "Barbell Calf Raises",
+        "steps": [
+          "Place the bar on your back. Start with feet flat on the ground.",
+          "Extend your heels upwards while keeping your knees stationary, and pause at the contracted position.",
+          "Slowly return to the starting position. Repeat."
+        ]
+      },
+      {
+        "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0nePZf9ETamZAaWPwdavWN4U08LEBB8IISAkdPFFrm45w9YW0yElh&usqp=CAE&s",
+        "name": "Calves Stretch Variation One",
+        "steps": [
+          "Place the ball of your foot against the wall with your heel on the ground. Place your hands on the wall in front of your shoulders.",
+          "Keeping your knee straight, slowly lean towards the wall, pause for a few seconds when you feel the stretch extending through your calf muscle.",
+          "Return to the starting position, and repeat the stretch with your other leg."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Forearms",
+    "data": [
+      {
+        "imgSrc": "https://gymvisual.com/img/p/6/5/9/2/6592.gif",
+        "name": "Chin Up",
+        "steps": [
+          "Grab the bar shoulder width apart with a supinated grip (palms facing you).",
+          "With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.",
+          "Slowly return to the starting position. Repeat."
+        ]
+      },
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Row.gif",
+        "name": "Dumbbell Row Unilateral",
+        "steps": [
+          "Brace your off arm against something stable (bench, box). Stagger your stance so your leg on the side of your working arm is back.",
+          "Try to get your torso to parallel with the ground. That will extend your range of motion.",
+          "Let your arm hang freely and then pull your elbow back. Imagine you've got a tennis ball in your armpit and squeeze it each rep."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/5/9/1/6/5916.gif",
+        "name": "Dumbbell Curl",
+        "steps": [
+          "Stand up straight with a dumbbell in each hand at arm's length.",
+          "Raise one dumbbell and twist your forearm until it is vertical and your palm faces the shoulder.",
+          "Lower to original position and repeat with opposite arm."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/5/1/7/0/5170.gif",
+        "name": "Dumbbell Reverse Curl",
+        "steps": [
+          "Grab the dumbbells with a pronated (overhand) grip. You can do this exercise thumbless if it's more comfortable on your wrists.",
+          "Flex at the elbows until your biceps touch your forearms. Try not to let your elbows flair outward.",
+          "Return to starting position and repeat."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Obliques",
+    "data": [
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2022/07/Cross-Crunch.gif",
+        "name": "CROSS CRUNCH",
+        "steps": [
+          "Press your hand into the ground and pick up your hip off the ground.",
+          "Open your chest and maintain this position for the allotted amount of time.",
+          "Open your chest and maintain."
+        ]
+      },
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/02/plank.gif",
+        "name": "Plank",
+        "steps": [
+          "Press your elbow into the floor.",
+          "Pick your hips up off the ground and maintain this position for the allotted amount of time.",
+          "Make sure you don't let your chest fall forward or backward."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/5/2/6/8/5268.gif",
+        "name": "Kettlebell Windmill",
+        "steps": [
+          "Stand with feet slightly wider than shoulder width apart. Hold the kettlebell in one hand and extend your arm above your head.",
+          "Keeping your legs straight and the kettlebell above your head, lower the relaxed arm towards the ground, twisting your body towards the side of the raised arm.",
+          "Return to the starting potion, tilt your pelvis forward and repeat."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/2/1/5/4/8/21548.gif",
+        "name": "Dumbbell Russian Twist",
+        "steps": [
+          "Sit on the floor and flex your knees and hips to a 90 degree angle.",
+          "Your feet should be hovering off the ground. (If that's too hard start with heels on the floor)",
+          "Rotate your upper spine to engage your obliques."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Quads",
+    "data": [
+      {
+        "imgSrc": "https://gymvisual.com/img/p/2/0/2/6/8/20268.gif",
+        "name": "Barbell Box Squat",
+        "steps": [
+          "Stand with your feet shoulder-width apart. Maintain the natural arch in your back, squeezing your shoulder blades and raising your chest.",
+          "Grip the bar across your shoulders and support it on your upper back. Unwrack the bar by straightening your legs, and take a step back",
+          "Bend your knees as you lower the weight without altering the form of your back until your hips are below your knees."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/1/0/2/8/3/10283.gif",
+        "name": "Dumbbell Goblet Squat",
+        "steps": [
+          "Hold the weight tucked into your upper chest area, keeping your elbows in. Your feet should be slightly wider than shoulder width.",
+          "Sink down into the squat, keeping your elbows inside the track of your knees.",
+          "Push through your heels while keeping your chest up and return to the starting position."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/3/2/4/5/4/32454.gif",
+        "name": "Machine Leg Extension",
+        "steps": [
+          "Sit on the machine with your back against the cushion and adjust the machine you are using so that your knees are at a 90 degree angle at the starting position.",
+          "Raise the weight by extending your knees outward, then lower your leg to the starting position. Both movements should be done in a slow, controlled motion."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/2/1/6/6/5/21665.gif",
+        "name": "Barbell Step Up",
+        "steps": [
+          "Begin by standing in front of a sturdy box or bench that is about knee-height, holding a barbell across your upper back and shoulders, using an overhand grip.",
+          "Place your right foot on the box and push through the heel to lift your body up and onto the box",
+          "Step back down with your right foot."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Shoulder",
+    "data": [
+      {
+        "imgSrc": "https://gymvisual.com/img/p/2/0/2/8/9/20289.gif",
+        "name": "Barbell Overhead Press",
+        "steps": [
+          "Take a roughly shoulder width grip. There should be a straight line from your elbow to fist (vertical forearms).",
+          "Pull your chin back and press the weight toward the ceiling by extending at the elbow joint and flexing at the shoulder joint.",
+          "Press until your elbows are extended and push your head forward slightly."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/5/1/4/6/5146.gif",
+        "name": "Dumbbell Seated Overhead Press",
+        "steps": [
+          "Sit on a bench with back support. Raise the dumbbells to shoulder height with your palms forward.",
+          "Raise the dumbbells upwards and pause at the contracted position.",
+          "Lower the weights back to starting position."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/1/8/4/5/7/18457.gif",
+        "name": "Cable Low Single Arm Lateral Raise",
+        "steps": [
+          "Use a handle attachment with the cable set all the way to the bottom of the machine.",
+          "You should vertically abduct at the shoulder raising your arm straight out to the side.",
+          "Raise until your arm is parallel with the ground and then back to the starting position."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/2/4/9/6/2/24962.gif",
+        "name": "Barbell Upright Row",
+        "steps": [
+          "Take a double overhand roughly shoulder width grip.",
+          "Pull your elbows straight up the ceiling. Aim to get the bar to chin level or slightly higher."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Traps",
+    "data": [
+      {
+        "imgSrc": "https://gymvisual.com/img/p/4/8/3/1/4831.gif",
+        "name": "Barbell Silverback Shrug",
+        "steps": [
+          "Stand with your feet shoulder width apart holding the Barbell with both hands in front just past shoulder width.",
+          "Bend forward at the hips with a slight bend in your knees, keeping your back straight.",
+          "Engage your shoulder blades, as if you are trying to touch them together."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/1/8/5/9/1/18591.gif",
+        "name": "Cable 30 Degree Shrug",
+        "steps": [
+          "Use a handle attachment on both sides of crossover. With cable attachment set all the way to the bottom.",
+          "Grab both handles and make sure you are centered in the machine. Let your arms hang freely.",
+          "Pull your shoulder blades up and in towards your ears. Let your shoulder blades depress back to the starting position."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/4/8/3/1/4831.gif",
+        "name": "Dumbbell Shrug",
+        "steps": [
+          "Stand tall with two dumbbells. Pull your shoulder blades up. Give a one second squeeze at the top."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/2/4/7/9/0/24790.gif",
+        "name": "Barbell Upright Row",
+        "steps": [
+          "Take a double overhand roughly shoulder width grip.",
+          "Pull your elbows straight up the ceiling. Aim to get the bar to chin level or slightly higher"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Glutes",
+    "data": [
+      {
+        "imgSrc": "https://gymvisual.com/img/p/2/0/2/6/8/20268.gif",
+        "name": "Barbell Box Squat",
+        "steps": [
+          "Stand with your feet shoulder-width apart. Maintain the natural arch in your back, squeezing your shoulder blades and raising your chest.",
+          "Grip the bar across your shoulders and support it on your upper back. Unwrack the bar by straightening your legs, and take a step back",
+          "Bend your knees as you lower the weight without altering the form of your back until your hips are below your knees."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/1/0/2/8/3/10283.gif",
+        "name": "Dumbbell Goblet Squat",
+        "steps": [
+          "Hold the weight tucked into your upper chest area, keeping your elbows in. Your feet should be slightly wider than shoulder width.",
+          "Sink down into the squat, keeping your elbows inside the track of your knees.",
+          "Push through your heels while keeping your chest up and return to starting position."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/4/8/5/4/4854.gif",
+        "name": "Barbell Stiff Leg Deadlifts",
+        "steps": [
+          "Stand with a barbell at your shins with your feet shoulder width apart.",
+          "Bend forward at your hips and keep your knees as fully extended as possible",
+          "Grab the barbell and then extend your hips while maintaining a straight back."
+        ]
+      },
+      {
+        "imgSrc": "https://www.inspireusafoundation.org/wp-content/uploads/2022/09/barbell-hip-thrust.gif",
+        "name": "Barbell Hip Thrust",
+        "steps": [
+          "Sit on the ground with a bench behind you. Have the barbell over your legs just above your hips.",
+          "Lean back against the bench so that your shoulders are resting upon it, stretch your arms out to either side using the bench as support.",
+          "Raise the weight by driving through your feet and extending your hips upwards. Support the weight with your shoulders and feet."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Hamstring",
+    "data": [
+      {
+        "imgSrc": "https://gymvisual.com/img/p/4/8/5/4/4854.gif",
+        "name": "Barbell Stiff Leg Deadlifts",
+        "steps": [
+          "Stand with a barbell at your shins with your feet shoulder width apart.",
+          "Bend forward at your hips and keep your knees as fully extended as possible.",
+          "Grab the barbell and then extend your hips while maintaining a straight back."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/2/0/8/9/7/20897.gif",
+        "name": "Glute Ham Raise",
+        "steps": [
+          "Position yourself on a glute ham raise machine or find a suitable substitute like a stability ball or bench.",
+          "Adjust the equipment to fit your body by setting the footplate at an appropriate height and making sure your feet are securely anchored.",
+          "Begin the movement by slowly lowering your upper body towards the ground while keeping your torso and legs aligned."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/1/0/4/8/2/10482.gif",
+        "name": "Machine Hamstring Curl",
+        "steps": [
+          "Lay down on the machine, placing your legs beneath the padded lever. Position your legs so that the padded lever is below your calve muscles.",
+          "Support yourself by grabbing the side handles of the machine, and slowly raise the weight with your legs, toes pointed straight.",
+          "Pause at the apex of the motion, then slowly return to starting position."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/4/7/7/5/4775.gif",
+        "name": "Barbell Low Bar Good Morning",
+        "steps": [
+          "Place the bar between your traps and rear delts. Pull your shoulder blades back to give the bar a shelf to sit on.",
+          "Push your hips back until you feel a stretch in your hamstrings. This means you're nearing the end of your Range of Motion without rounding your spine.",
+          "When you feel the stretch push your hips forward until you're in a standing position."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Lats",
+    "data": [
+      {
+        "imgSrc": "https://gymvisual.com/img/p/6/5/9/2/6592.gif",
+        "name": "Chin Ups",
+        "steps": [
+          "Grab the bar shoulder width apart with a supinated grip (palms facing you)",
+          "With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.",
+          "Slowly return to starting position. Repeat."
+        ]
+      },
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Row.gif",
+        "name": "Dumbbell Row Unilateral",
+        "steps": [
+          "Brace your off arm against something stable (bench, box). Stagger your stance so your leg on the side of your working arm is back.",
+          "Try to get your torso to parallel with the ground. That will extend your range of motion.",
+          "Let your arm hang freely and then pull your elbow back. Imagine you've got a tennis ball in your armpit and squeeze it each rep."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/1/3/1/4/2/13142.gif",
+        "name": "Pull Up",
+        "steps": [
+          "Grasp the bar with an overhand grip, arms and shoulders fully extended.",
+          "Pull your body up until your chin is above the bar.",
+          "Lower your body back to starting position."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/1/8/4/1/3/18413.gif",
+        "name": "Cable Bent Over Bar Pullover",
+        "steps": [
+          "You can use any attachment. Cable should be set all the way to the top of the machine.",
+          "Grab your attachment and walk a few steps back. Push your butt back to where you are leaning forward somewhat.",
+          "Initiate the movement with your shoulders and not your elbows. Imagine trying to pull the attachment through your thighs at the bottom."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LowerBack",
+    "data": [
+      {
+        "imgSrc": "https://gymvisual.com/img/p/6/5/9/2/6592.gif",
+        "name": "Chin Ups",
+        "steps": [
+          "Grab the bar shoulder width apart with a supinated grip (palms facing you)",
+          "With your body hanging and arms fully extended, pull yourself up until your chin is past the bar.",
+          "Slowly return to starting position. Repeat."
+        ]
+      },
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Row.gif",
+        "name": "Dumbbell Row Unilateral",
+        "steps": [
+          "Brace your off arm against something stable (bench, box). Stagger your stance so your leg on the side of your working arm is back.",
+          "Try to get your torso to parallel with the ground. That will extend your range of motion.",
+          "Let your arm hang freely and then pull your elbow back. Imagine you've got a tennis ball in your armpit and squeeze it each rep."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/1/3/1/4/2/13142.gif",
+        "name": "Pull Up",
+        "steps": [
+          "Grasp the bar with an overhand grip, arms and shoulders fully extended.",
+          "Pull your body up until your chin is above the bar.",
+          "Lower your body back to starting position."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/1/8/4/1/3/18413.gif",
+        "name": "Cable Bent Over Bar Pullover",
+        "steps": [
+          "You can use any attachment. Cable should be set all the way to the top of the machine.",
+          "Grab your attachment and walk a few steps back. Push your butt back to where you are leaning forward somewhat.",
+          "Initiate the movement with your shoulders and not your elbows. Imagine trying to pull the attachment through your thighs at the bottom."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "midback",
+    "data": [
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Dumbbell-Row.gif",
+        "name": "Dumbbell Row Unilateral",
+        "steps": [
+          "Brace your off arm against something stable (bench, box). Stagger your stance so your leg on the side of your working arm is back.",
+          "Try to get your torso to parallel with the ground. That will extend your range of motion.",
+          "Let your arm hang freely and then pull your elbow back. Imagine you have got a tennis ball in your armpit and squeeze it each rep."
+        ]
+      },
+      {
+        "imgSrc": "https://homeworkouts.org/wp-content/uploads/anim-pull-ups.gif",
+        "name": "Pull Ups",
+        "steps": [
+          "Grasp the bar with an overhand grip, arms and shoulders fully extended.",
+          "Pull your body up until your chin is above the bar.",
+          "Lower your body back to starting position."
+        ]
+      },
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/02/Barbell-Deadlift.gif",
+        "name": "Barbell Deadlift",
+        "steps": [
+          "Stand with your mid-foot under the bar and grip the bar with your hands, about a shoulder width apart.",
+          "Bend your knees, then lift the bar by straightening your back. It is important to keep your back straight.",
+          "Stand to your full height and hold."
+        ]
+      },
+      {
+        "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/04/Dumbbell-Decline-Shrug.gif",
+        "name": "Kettlebell Incline Shrug",
+        "steps": [
+          "Leaning across the back section of the bench, with feet firmly on the floor and with arms hanging to the sides.",
+          "Holding the kettlebell in both hands engage your shoulder blades, as if you are trying to touch them together. Release the shrug."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Trieceps",
+    "data": [
+      {
+        "imgSrc": "https://gymvisual.com/img/p/5/9/1/5/5915.gif",
+        "name": "Cable Rope Pushdown",
+        "steps": [
+          "The cable should be set all the way at the top of the machine.",
+          "Make sure to keep your upper arm glued at your side. Extend your elbows until you feel your triceps contract.",
+          "Be set all the way at the top of the machine."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/1/0/0/6/1/10061.gif",
+        "name": "Barbell Close Grip Bench Press",
+        "steps": [
+          "Lay flat on the bench with your feet on the ground. With a narrow grip on the bar, straighten your arms.",
+          "Lower the bar to your lower-mid chest.",
+          "Slowly raise the bar until you've locked your elbows."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/2/1/5/4/3/21543.gif",
+        "name": "Dumbbell Skullcrusher",
+        "steps": [
+          "Lay flat on the floor or a bench with your fists extended to the ceiling and a neutral grip.",
+          "Break at the elbows until your fists are by your temples. Then extend your elbows and flex your triceps at the top.",
+          "Break at the elbows until your fists are by your temples."
+        ]
+      },
+      {
+        "imgSrc": "https://gymvisual.com/img/p/6/6/6/2/6662.gif",
+        "name": "Bench Dips",
+        "steps": [
+          "Grip the edge of the bench with your hands. Keep your feet together and legs straight.",
+          "Lower your body straight down.",
+          "Slowly press back up to the starting point."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+.content {
+  border: 5px solid transparent;
+  box-shadow: 0 0 60px rgb(255, 0, 0);
+  transition: box-shadow 0.3s ease-in-out; /* Only transition the box-shadow */
+}
+
+.content {
+  border: 5px solid transparent;
+  box-shadow: 0 0 12px rgb(255, 0, 0);
+  transition: box-shadow 0.3s ease-in-out; /* Only transition the box-shadow */
+}
+
+@keyframes changeShadow {
+  0% {
+    box-shadow: 0 0 30px rgb(193, 64, 12); /* Original shadow color */
+  }
+
+  50% {
+    box-shadow: 0 0 30px #ff0000; /* Blue shadow color */
+  }
+
+  100% {
+    box-shadow: 0 0 30px rgb(193, 64, 12); /* Red shadow color */
+  }
+}
+
+.content:hover {
+  animation: changeShadow 2s infinite; /* Apply the animation on hover */
+}
+
+/* Add this CSS to make the calendar responsive */
+.calendar-container {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .calendar-container {
+    width: calc(100% - 8rem); /* Adjust the width as needed */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

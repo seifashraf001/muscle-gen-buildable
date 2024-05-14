@@ -1,0 +1,59 @@
+.workout-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-basis: 10px;
+}
+
+.workout {
+  width: 20%;
+  margin: 10px;
+}
+
+li {
+  list-style-type: decimal;
+}
+
+@media (min-width: 350px) and (max-width: 768px) {
+  .workout-container {
+    flex-direction: column;
+  }
+  .workout {
+    width: 80%;
+    /* height: 25%; */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .workout {
+    flex-grow: 2;
+    width: 40%;
+  }
+}
+
+.content {
+  border: 5px solid transparent;
+  box-shadow: 0 0 12px rgb(255, 0, 0);
+  transition: box-shadow 0.3s ease-in-out; /* Only transition the box-shadow */
+}
+
+@keyframes changeShadow {
+  0% {
+    box-shadow: 0 0 30px rgb(193, 64, 12); /* Original shadow color */
+  }
+
+  50% {
+    box-shadow: 0 0 30px #ff0000; /* Blue shadow color */
+  }
+
+  100% {
+    box-shadow: 0 0 30px rgb(193, 64, 12); /* Red shadow color */
+  }
+}
+
+.content:hover {
+  animation: changeShadow 2s infinite; /* Apply the animation on hover */
+}

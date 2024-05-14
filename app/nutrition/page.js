@@ -36,16 +36,6 @@ const CalorieCalculator = () => {
   const [totalCalories, setTotalCalories] = useState(0);
   const [calorieDifference, setCalorieDifference] = useState(0);
   const [error, setError] = useState('');
-  const [tableCalories, setTableCalories] = useState(0);
-
-  const toggleTable= () => {
-    if (!totalCalories === 0 && !calorieDifference === 0) {
-      setTableCalories(totalCalories);
-      setCalorieDifference(calorieDifference);
-      return true;
-    }
-    return false;
-  }
 
   useEffect(() => {
     calculateTotalCalories();
@@ -132,52 +122,50 @@ const CalorieCalculator = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           className="px-4 py-2 rounded-l-lg border-gray-300  text-black focus:outline-none"
           />
-
     <button className="bg-primary2 text-white px-4 py-2  rounded-r-lg hover:opacity-90" onClick={() => setSearchTerm('')}> Clear </button>
     </div>
-
   </div>
 </div>
 
 <div className='flex justify-center mt-12'>
-<div className='w-full md:w-[30%]'>
-  <table className="min-w-full text-left text-sm font-light">
-    <thead className="border-b font-medium dark:border-neutral-500">
+<div class='w-full md:w-[30%] overflow-x-auto'>
+  <table class="min-w-full text-left text-sm font-light">
+    <thead class="border-b font-medium dark:border-neutral-500">
       <tr>
-        <th scope="col" className="px-3 py-4">Selected Food</th>
-        <th scope="col" className="px-3 py-4">Total Calories</th>
-        <th scope="col" className="px-3 py-4">Calories Difference</th>
+        <th scope="col" class="px-3 py-4">Selected Food</th>
+        <th scope="col" class="px-3 py-4">Total Calories</th>
+        <th scope="col" class="px-3 py-4">Remaining Calories</th>
       </tr>
     </thead>
     <tbody>
-      <tr className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-        <td className="whitespace-nowrap px-4 py-5">
-          <ul style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+      <tr class="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
+        <td class="whitespace-nowrap px-4 py-5">
+          <ul class="flex flex-col md:flex-row items-center">
             {selectedFoodEntries.map((entry, index) => (
-              <li key={index} className="mb-2" style={{ display: 'flex', alignItems: 'center' }}>
+              <li key={index} class="mb-2 md:mb-0 md:mr-4" style={{ flex: '1 1 auto' }}>
                 <button onClick={() => handleRemoveFood(index)}>
-                  <Image src='/cross.png' className='mr-2' width={18} height={18} />
+                  <Image src='/cross.png' class='mr-2' width={18} height={18} />
                 </button>
                 <span>{entry.food.name} - {entry.grams} grams</span>
               </li>
             ))}
           </ul>
         </td>
-        <td className="whitespace-nowrap px-4">
-  {totalCalories > 0 && (
-    <p>{totalCalories}</p>
-  )}
-</td>
-<td className="whitespace-nowrap px-4 py-4">
-  {calorieDifference !== 0 && (
-    <p>{calorieDifference}</p>
-  )}
-</td>
-
+        <td class="whitespace-nowrap px-4">
+          {totalCalories > 0 && (
+            <p>{totalCalories}</p>
+          )}
+        </td>
+        <td class="whitespace-nowrap px-4 py-4">
+          {calorieDifference !== 0 && (
+            <p>{calorieDifference}</p>
+          )}
+        </td>
       </tr>
     </tbody>
   </table>
 </div>
+
 
 </div>
 <div >
@@ -202,7 +190,7 @@ const CalorieCalculator = () => {
                       onChange={(e) => setGrams(e.target.value)}
                       className="p-2 border border-gray-300 rounded bg-white text-black"
                     />
-                    <button onClick={handleAddFood} className="ml-2 px-4 py-2 bg-green-600 text-white rounded hover:opacity-90 transition">
+                    <button onClick={handleAddFood} className="ml-2 px-4 py-2 bg-green-700 text-white rounded hover:opacity-90 transition max-sm:text-sm max-sm:px-2 max-sm:p-2">
                       Add Food
                     </button>
                   </div>

@@ -45,7 +45,7 @@
 }
 
 .container .icon .imgbx.active {
-  box-shadow: 0 0 0 6px #222, 0 0 0 12px #ff1d50;
+  box-shadow: 0 0 0 6px #222, 0 0 0 12px #801d1d;
 }
 
 .container .icon .imgbx img {

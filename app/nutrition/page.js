@@ -117,10 +117,10 @@ const CalorieCalculator = () => {
         </select>
       </div>
   <div class="flex flex-col sm:flex-row items-center">
-    <div>
+    <div className='flex max-md:justify-center'>
     <input type="text" placeholder="Search..." value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="px-4 py-2 rounded-l-lg border-gray-300  text-black focus:outline-none"
+          className="px-4 py-2 rounded-l-lg border-gray-300 text-black focus:outline-none w-[50%]"
           />
     <button className="bg-primary2 text-white px-4 py-2  rounded-r-lg hover:opacity-90" onClick={() => setSearchTerm('')}> Clear </button>
     </div>
@@ -140,7 +140,7 @@ const CalorieCalculator = () => {
     <tbody>
       <tr class="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
         <td class="whitespace-nowrap px-4 py-5">
-          <ul class="flex flex-col md:flex-row items-center">
+          <ul style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
             {selectedFoodEntries.map((entry, index) => (
               <li key={index} class="mb-2 md:mb-0 md:mr-4" style={{ flex: '1 1 auto' }}>
                 <button onClick={() => handleRemoveFood(index)}>
@@ -174,7 +174,7 @@ const CalorieCalculator = () => {
 
       <h2 className="text-2xl font-semibold text-center my-5">Meals</h2>
       <div className="mb-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {filteredFoods.map((food) => (
             <div key={food.id} className="bg-black content rounded-lg overflow-hidden">
               <img src={food.image} alt={food.name} className="w-full h-48 object-cover" />
@@ -188,10 +188,10 @@ const CalorieCalculator = () => {
                       placeholder="Enter grams"
                       value={grams}
                       onChange={(e) => setGrams(e.target.value)}
-                      className="p-2 border border-gray-300 rounded bg-white text-black"
+                      className="p-2 border border-gray-300 rounded bg-white text-black w-[50%] max-md:placeholder:text-[0.8rem] "
                     />
-                    <button onClick={handleAddFood} className="ml-2 px-4 py-2 bg-green-700 text-white rounded hover:opacity-90 transition max-sm:text-sm max-sm:px-2 max-sm:p-2">
-                      Add Food
+                    <button onClick={handleAddFood} className="ml-2 px-2 py-2 bg-green-700 text-white rounded hover:opacity-90 transition max-sm:text-sm max-sm:px-2 max-sm:p-2">
+                      Add
                     </button>
                   </div>
                 )}

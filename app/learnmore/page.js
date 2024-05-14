@@ -41,12 +41,6 @@ const LearnMorePage = () => {
          >
     Back to Home
      </a>
-      <a
-        href="/register"
-        className="rounded-md bg-gradient-to-r px-5 py-2.5 text-sm  transition from-orange-700 via-red-700 to-red-900 hover:opacity-80 text-white"
-      >
-        Subscribe for Updates
-      </a>
         </div>
       </div>
     </div>

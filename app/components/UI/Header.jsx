@@ -230,6 +230,14 @@ function Header() {
                 <li>
                   <a
                     className="text-white transition hover:opacity-85 "
+                    href="/nutrition "
+                  >
+                    Nutrition
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-white transition hover:opacity-85 "
                     href="/pricing"
                   >
                     Pricing

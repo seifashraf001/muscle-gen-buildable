@@ -79,8 +79,7 @@
   position: absolute;
   inset: 60px;
   border: 4px solid transparent;
-  border-left: 4px solid #2e6cff;
-  border-right: 4px solid #fff;
+  border-left: 4px solid #c2400c;
   border-radius: 50%;
   animation: animate_01 5s linear infinite;
   z-index: 1;

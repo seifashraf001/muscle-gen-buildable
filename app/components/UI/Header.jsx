@@ -39,7 +39,7 @@ function Header() {
                 <li>
                   <a
                     className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="/Header/workout"
+                    href="/workout"
                   >
                     Workout
                   </a>
@@ -47,7 +47,7 @@ function Header() {
                 <li>
                   <a
                     className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="/Header/routine"
+                    href="/routine"
                   >
                     Routine
                   </a>
@@ -55,7 +55,7 @@ function Header() {
                 <li>
                   <a
                     className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="/Header/tools"
+                    href="/tools"
                   >
                     Tools
                   </a>
@@ -63,7 +63,7 @@ function Header() {
                 <li>
                   <a
                     className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="/Header/Pricing"
+                    href="/pricing"
                   >
                     Pricing
                   </a>
@@ -71,7 +71,7 @@ function Header() {
                 <li>
                   <a
                     className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="/Header/Team"
+                    href="/Team"
                   >
                     Team
                   </a>
@@ -103,7 +103,7 @@ function Header() {
                   className="flex items-center text-gray-600 focus:outline-none"
                   onClick={toggleDropdown}
                 >
-                  <img src="peo.svg" alt="Profile" className="w-8 h-8 rounded-full" />
+                  <img src="https://i.imgur.com/niqMFrk.png" alt="Profile" className="w-8 h-8 rounded-full" />
                   <span className="ml-2 text-white">{session.user.name}</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

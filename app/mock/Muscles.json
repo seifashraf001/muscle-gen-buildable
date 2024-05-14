@@ -82,7 +82,7 @@
     ]
   },
   {
-    "id": "Claves",
+    "id": "chest",
     "data": [
       {
         "imgSrc": "https://fitnessprogramer.com/wp-content/uploads/2021/03/Decline-Barbell-Bench-Press.gif",
@@ -158,7 +158,7 @@
     ]
   },
   {
-    "id": "Chest",
+    "id": "Calves",
     "data": [
       {
         "imgSrc": "https://gymvisual.com/img/p/5/3/4/2/5342.gif",
@@ -440,7 +440,7 @@
     ]
   },
   {
-    "id": "Hamstring",
+    "id": "Hamstrings",
     "data": [
       {
         "imgSrc": "https://gymvisual.com/img/p/4/8/5/4/4854.gif",

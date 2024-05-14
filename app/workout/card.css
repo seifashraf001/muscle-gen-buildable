@@ -4,7 +4,6 @@
 @import "tailwindcss/utilities";
 
 * {
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,7 +19,7 @@
 .content {
   border: 5px solid transparent;
   box-shadow: 0 0 12px rgb(255, 0, 0);
-  transition: box-shadow 0.3s ease-in-out; /* Only transition the box-shadow */
+  transition: box-shadow 5s ease-in-out; /* Only transition the box-shadow */
 }
 
 @keyframes changeShadow {

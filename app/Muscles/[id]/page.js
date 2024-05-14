@@ -17,9 +17,7 @@ function MusclePage({ params }) {
               <img alt="" src={workout.imgSrc} className="w-full h-full object-cover" />
 
               <div className="bg-white p-4 sm:p-6">
-                <a href="#">
                   <h3 className="mt-0.5 text-lg text-gray-900">{workout.name}</h3>
-                </a>
 
                 <ol className="mt-2 text-sm text-gray-500 pl-2">
                   {workout.steps.map((step, index) => (

@@ -55,7 +55,7 @@ function Hero() {
 
             <a
               className="block w-full rounded px-12 py-3 font-medium text-red-500 shadow hover:text-red-700 transition active:text-red-500 sm:w-auto"
-              href="/faqs"
+              href="/learnmore"
             >
               Learn More
             </a>

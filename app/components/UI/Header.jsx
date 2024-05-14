@@ -16,7 +16,7 @@ function Header() {
   const { data: session } = useSession();
 
   return (
-    <header className="bg-black dark:bg-primary relative">
+    <header className="bg-black relative">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
@@ -30,7 +30,7 @@ function Header() {
               <ul className="flex items-center gap-6 text-sm">
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    className="text-white transition hover:opacity-85 "
                     href="/"
                   >
                     Home
@@ -38,7 +38,7 @@ function Header() {
                 </li>
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    className="text-white transition hover:opacity-85 "
                     href="/workout"
                   >
                     Workout
@@ -46,7 +46,7 @@ function Header() {
                 </li>
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    className="text-white transition hover:opacity-85 "
                     href="/routine"
                   >
                     Routine
@@ -54,7 +54,7 @@ function Header() {
                 </li>
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    className="text-white transition hover:opacity-85 "
                     href="/tools"
                   >
                     Tools
@@ -62,7 +62,15 @@ function Header() {
                 </li>
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    className="text-white transition hover:opacity-85 "
+                    href="/nutrition "
+                  >
+                    Nutrition
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-white transition hover:opacity-85 "
                     href="/pricing"
                   >
                     Pricing
@@ -70,7 +78,7 @@ function Header() {
                 </li>
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    className="text-white transition hover:opacity-85 "
                     href="/Team"
                   >
                     Team
@@ -163,7 +171,7 @@ function Header() {
             ) : (
               <div className="sm:flex sm:gap-4">
                 <a
-                  className="rounded-md bg-gradient-to-r px-5 py-2.5 text-sm font-medium transition from-orange-700 via-red-700 to-red-900 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                  className="rounded-md bg-gradient-to-r px-5 py-2.5 text-sm font-medium text-white transition from-orange-700 via-red-700 to-red-900 hover:opacity-80"
                   href="/login"
                 >
                   Login
@@ -171,7 +179,7 @@ function Header() {
 
                 <div className="hidden sm:flex">
                   <a
-                    className="rounded-md bg-gradient-to-r px-5 py-2.5 text-sm font-medium transition from-orange-700 via-red-700 to-red-900 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+                    className="rounded-md bg-gradient-to-r px-5 py-2.5 text-sm font-medium text-white transition from-orange-700 via-red-700 to-red-900 hover:opacity-80"
                     href="/register"
                   >
                     Register
@@ -189,7 +197,7 @@ function Header() {
               <ul className="flex flex-col items-center gap-4 text-sm">
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    className="text-white transition hover:opacity-85 "
                     href="/"
                   >
                     Home
@@ -197,40 +205,40 @@ function Header() {
                 </li>
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="/Header/workout"
+                    className="text-white transition hover:opacity-85 "
+                    href="/workout"
                   >
                     Workout
                   </a>
                 </li>
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="/Header/routine"
+                    className="text-white transition hover:opacity-85 "
+                    href="/routine"
                   >
                     Routine
                   </a>
                 </li>
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="/Header/tools"
+                    className="text-white transition hover:opacity-85 "
+                    href="/tools"
                   >
                     Tools
                   </a>
                 </li>
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="/Header/Pricing"
+                    className="text-white transition hover:opacity-85 "
+                    href="/pricing"
                   >
                     Pricing
                   </a>
                 </li>
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                    href="/Header/Team"
+                    className="text-white transition hover:opacity-85 "
+                    href="/Team"
                   >
                     Team
                   </a>

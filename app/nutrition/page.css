@@ -1,0 +1,27 @@
+.content {
+    border: 5px solid transparent;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  @keyframes changeShadow {
+    0% {
+      box-shadow: 0 0 30px rgb(255, 140, 0); 
+    }
+    25% {
+      box-shadow: 0 0 30px rgb(255, 255, 255); 
+    }
+    50% {
+      box-shadow: 0 0 30px #ff0000; 
+    }
+    75% {
+      box-shadow: 0 0 30px #ffffff; 
+    }
+    100% {
+      box-shadow: 0 0 30px rgb(164, 90, 0);
+    }
+  }
+
+  .content:hover {
+    animation: changeShadow 2s infinite; 
+  }

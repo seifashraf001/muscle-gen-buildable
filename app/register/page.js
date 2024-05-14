@@ -244,14 +244,14 @@ function Reg() {
               </div>
               <div className="col-span-6">
                 <p className="text-sm text-white dark:text-white">
-                  By creating an account, you agree to our
-                  <a href="register/Term" className="text-white underline dark:text-white">
-                    terms and conditions
+                  By creating an account, you agree to our &nbsp;
+                  <a href="/terms" className="text-white underline dark:text-white">
+                    terms and conditions 
                   </a>
-                  and
-                  <a href="register/Privacy" className="text-white underline dark:text-white">
-                    {" "}
-                    privacy policy{" "}
+                  &nbsp; and &nbsp;
+                  <a href="/privacy" className="text-white underline dark:text-white">
+                    
+                    privacy policy
                   </a>
                   .
                 </p>
@@ -265,7 +265,7 @@ function Reg() {
                 </button>
 
                 <p className="mt-4 text-sm text-white sm:mt-0 dark:text-white">
-                  Already have an account?
+                  Already have an account? &nbsp;
                   <Link href="/login" className="text-white underline dark:text-white">
                     Log in
                   </Link>

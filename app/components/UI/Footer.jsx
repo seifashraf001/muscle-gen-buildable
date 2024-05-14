@@ -1,5 +1,5 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 function Footer() {
   return (
@@ -11,6 +11,7 @@ function Footer() {
           <Link
             className="inline-flex items-center gap-2 rounded-full border transition border-none bg-white px-8 py-3 text-primary2 hover:bg-gray-200 focus:outline-none focus:ring active:bg-white/90"
             href="/Muscles"
+            
           >
             <span className="text-sm font-medium">Explore Workouts</span>
 
@@ -21,12 +22,7 @@ function Footer() {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </Link>
         </div>
@@ -41,6 +37,9 @@ function Footer() {
                   className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="https://www.verywellfit.com/complete-beginners-guide-to-strength-training-1229585"
                   target="_blank"
+
+                
+                
                 >
                   Strength Training
                 </a>
@@ -51,6 +50,7 @@ function Footer() {
                   className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="https://www.medicalnewstoday.com/articles/cardio-exercises-at-home#best-at-home-cardio"
                   target="_blank"
+
                 >
                   Cardio Workouts
                 </a>
@@ -60,8 +60,9 @@ function Footer() {
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="https://www.tpoftampa.com/yoga-and-meditation-benefits-and-differences/"
+                
                   target="_blank"
-                >
+                  >
                   Yoga and Meditation
                 </a>
               </li>
@@ -71,6 +72,7 @@ function Footer() {
                   className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="https://orthoinfo.aaos.org/en/staying-healthy/flexibility-exercises-for-young-athletes/"
                   target="_blank"
+
                 >
                   Flexibility Training
                 </a>
@@ -87,6 +89,7 @@ function Footer() {
                   className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/"
                   target="_blank"
+
                 >
                   Healthy Eating
                 </a>
@@ -97,6 +100,7 @@ function Footer() {
                   className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="https://tastesbetterfromscratch.com/category/meal-plan/"
                   target="_blank"
+
                 >
                   Meal Planning
                 </a>
@@ -107,6 +111,7 @@ function Footer() {
                   className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="https://www.webmd.com/vitamins/index"
                   target="_blank"
+
                 >
                   Supplements
                 </a>
@@ -117,6 +122,7 @@ function Footer() {
                   className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="https://familydoctor.org/hydration-why-its-so-important/"
                   target="_blank"
+
                 >
                   Hydration
                 </a>
@@ -133,7 +139,9 @@ function Footer() {
                   className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="https://the-fitness-forum.com/"
                   target="_blank"
-                >
+
+
+>
                   Fitness Forum
                 </a>
               </li>
@@ -143,6 +151,7 @@ function Footer() {
                   className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                   href="https://www.timeoutdoors.com/challenges"
                   target="_blank"
+
                 >
                   Events & Challenges
                 </a>
@@ -157,7 +166,7 @@ function Footer() {
               <li>
                 <Link
                   className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                  href="/Footer/Contact"
+                  href="/contactus"
                 >
                   Support
                 </Link>
@@ -166,11 +175,21 @@ function Footer() {
               <li>
                 <Link
                   className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                  href="/Footer/faqs"
+                  href="/faqs"
                 >
                   FAQs
                 </Link>
               </li>
+
+              <li>
+                <a
+                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  href="/DeveloperPage"
+                >
+                  Dev
+                </a>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -222,7 +241,9 @@ function Footer() {
               >
                 <span className="sr-only">Twitter</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                  />
                 </svg>
               </Link>
             </li>
@@ -242,3 +263,4 @@ function Footer() {
 }
 
 export default Footer;
+

@@ -193,8 +193,9 @@ function Header() {
         {/* Menu items for mobile */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <nav aria-label="Global" className="mt-2">
-              <ul className="flex flex-col items-center gap-4 text-sm">
+            <nav aria-label="Global" className="my-2 pb-4">
+              <hr></hr>
+              <ul className="flex flex-col items-center gap-4 text-sm mt-4">
                 <li>
                   <a
                     className="text-white transition hover:opacity-85 "

@@ -4,7 +4,7 @@ import './page.css'
 import React, { useState, useEffect } from 'react';
 
 const foods = [
-  { id: 1, name: 'Grilled Chicken Salad', calories: 350, protein: 30, carbs: 15, fats: 20 , image: './Food/Grilled Chicken Salad.jpeg'  },
+  { id: 1, name: 'Grilled Chicken Salad', calories: 350 , image: './Food/Grilled Chicken Salad.jpeg'  },
   { id: 2, name: 'Quinoa & Avocado Bowl', calories: 400, protein: 25, carbs: 30, fats: 18 , image:'./Food/Quinoa & Avocado Bowl.jpeg'},
   { id: 3, name: 'Salmon with Asparagus', calories: 380, protein: 35, carbs: 10, fats: 22,image:'./Food/Salmon with Asparagus.jpeg' },
   { id: 4, name: 'Vegetable Stir-Fry', calories: 320, protein: 15, carbs: 40, fats: 12 ,image:'./Food/Vegetable Stir-Fry.jpeg' },
@@ -18,12 +18,16 @@ const foods = [
   { id: 12, name: 'Turkey and Spinach Sandwich', calories: 350, protein: 22, carbs: 30, fats: 16  ,image:'./Food/Turkey and Spinach Sandwich.jpeg'},
   { id: 13, name: 'Roasted Vegetable Bowl', calories: 300, protein: 15, carbs: 40, fats: 12 ,image:'./Food/Roasted Vegetable Bowl.jpeg '},
   { id: 14, name: 'Black Bean and Corn Salad', calories: 260, protein: 16, carbs: 30, fats: 10 ,image:'./Food/Black Bean and Corn Salad.jpeg'},
-  { id: 15, name: 'Grilled Fish Tacos', calories: 380, protein: 25, carbs: 35, fats: 18 ,image:'./Food/Grilled Fish Tacos.jpeg '},
+  { id: 15, name: 'Grilled Fish Tacos', calories: 380, protein: 25, carbs: 35, fats: 18 ,image:'./Food/Grilled Fish Tacos.jpeg'},
   { id: 16, name: 'Mango Chicken Salad', calories: 320, protein: 25, carbs: 20, fats: 15, image: './Food/Mango Chicken Salad.jpeg' },
   { id: 17, name: 'Vegetarian Buddha Bowl', calories: 380, protein: 18, carbs: 45, fats: 12, image: './Food/Vegetarian Buddha Bowl.jpeg' },
-{ id: 18, name: 'Teriyaki Salmon Bowl', calories: 420, protein: 35, carbs: 30, fats: 20, image: './Food/Teriyaki Salmon Bowl.jpeg' },
-{ id: 19, name: 'Mediterranean Quinoa Salad', calories: 350, protein: 20, carbs: 40, fats: 16, image: './Food/Mediterranean Quinoa Salad.jpeg' },
-{ id: 20, name: 'Avocado Toast with Poached Eggs', calories: 300, protein: 15, carbs: 25, fats: 18, image: './Food/Avocado Toast with Poached Eggs.jpeg' }
+  { id: 18, name: 'Teriyaki Salmon Bowl', calories: 420, protein: 35, carbs: 30, fats: 20, image: './Food/Teriyaki Salmon Bowl.jpeg' },
+  { id: 19, name: 'Mediterranean Quinoa Salad', calories: 350, protein: 20, carbs: 40, fats: 16, image: './Food/Mediterranean Quinoa Salad.jpeg' },
+  { id: 20, name: 'Avocado Toast with Poached Eggs', calories: 300, protein: 15, carbs: 25, fats: 18, image: './Food/Avocado Toast with Poached Eggs.jpeg' },
+  { id: 21, name: 'Chicken Tikka Masala', calories: 450, protein: 30, carbs: 35, fats: 22, image: './Food/Chicken Tikka Masal.jpeg' },
+  { id: 22, name: 'Spinach and Mushroom Omelette', calories: 280, protein: 18, carbs: 10, fats: 20, image: './Food/Spinach and Mushroom Omelette.jpeg' },
+  { id: 23, name: 'Grilled Vegetable Skewers', calories: 220, protein: 8, carbs: 30, fats: 12, image: './Food/Grilled Vegetable Skewers.jpeg' },
+  { id: 24, name: 'Salmon with Asparagus', calories: 380, protein: 35, carbs: 10, fats: 22,image:'./Food/Salmon with Asparagus.jpeg' },
 ];
 
 const CalorieCalculator = () => {

@@ -5,7 +5,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "./components/UI/Header";
 import Footer from "./components/UI/Footer";
-import Chatbot from "./components/Chatbot";
+
 
 import { AuthProvider } from "./Providers";
 import { SessionProvider } from "next-auth/react";
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
           <Header />
 
           <AuthProvider>{children}</AuthProvider>
-          <Chatbot/>
+         
           <Footer />
         </body>
       </html>

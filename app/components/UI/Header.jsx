@@ -76,14 +76,14 @@ function Header() {
                     Pricing
                   </a>
                 </li>
-                {/* <li>
+                <li>
                   <a
                     className="text-white transition hover:opacity-85 "
                     href="/Team"
                   >
                     Team
                   </a>
-                </li> */}
+                </li>
               </ul>
             </nav>
           </div>
@@ -244,14 +244,14 @@ function Header() {
                     Pricing
                   </a>
                 </li>
-                {/* <li>
+                <li>
                   <a
                     className="text-white transition hover:opacity-85 "
                     href="/Team"
                   >
                     Team
                   </a>
-                </li> */}
+                </li>
               </ul>
             </nav>
           </div>

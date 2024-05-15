@@ -8,21 +8,17 @@ function Hero() {
       className="bg-cover bg-center h-screen relative"
       style={{ backgroundImage: `url("background.jpg")` }}
     >
-      <div className="absolute inset-0 flex  justify-center mt-8">
-        <div className="mx-auto max-w-xl text-center">
-          <h1 className="text-5xl font-extrabold sm:text-6xl text-white">
-            Muscle Generator
-            <strong
-              className="bg-gradient-to-r from-gray-900 via-gray-300 to-gray-500 bg-clip-text text-3xl font-extrabold text-transparent sm:text-6xl"
-            >
-              {" "}
-              Make It Pump
-            </strong>
-          </h1>
+<div class="absolute inset-0 text-center mt-5">
+  <div class="mx-auto max-w-xl">
+    <div>
+      <h1 class="text-5xl font-extrabold sm:text-6xl text-white">Muscle Generator</h1>
+    </div>
+    <div class="mt-3">
+      <h2 class="text-5xl font-extrabold sm:text-6xl text-transparent bg-gradient-to-r from-gray-900 via-gray-300 to-gray-500 bg-clip-text">Make It Pump</h2>
+    </div>
+  </div>
+</div>
 
-          
-        </div>
-      </div>
 
       <div className="absolute bottom-0 left-0 mb-8 ml-8">
         <a

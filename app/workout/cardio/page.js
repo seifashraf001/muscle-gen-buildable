@@ -6,7 +6,7 @@ import './page.css';
 const card = () => {
 
     return (
-    <div className='flex w-full justify-center py-11 gap-14 flex-wrap'>
+    <div className='flex w-full bg-black justify-center py-11 gap-14 flex-wrap'>
       <div className='rounded-2xl  w-[400px] overflow-hidden shadow-md shadow-white content'>
         <img className='h-[300px] w-[600px]'  src='/beginner.jpg' />
 

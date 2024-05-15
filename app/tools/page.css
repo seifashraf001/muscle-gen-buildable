@@ -1,5 +1,7 @@
+
+
 .content {
-  border: 5px solid transparent;
+  background-color: black;
   box-shadow: 0 0 60px rgb(255, 0, 0);
   transition: box-shadow 0.3s ease-in-out; /* Only transition the box-shadow */
 }

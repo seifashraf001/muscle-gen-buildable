@@ -4,8 +4,8 @@ import Link from "next/link";
 
 function Muslces() {
   return (
-    <div className=" lg:col-span-7 col-span-10 -mt-4 sm:-mt-0 lg:mt-0 ">
-      <div className="container-fluid align-center pt-3 ">
+    <div className=" lg:col-span-7 col-span-10 -mt-4 sm:-mt-0 lg:mt-0 bg-white ">
+      <div className="container-fluid align-center pt-3 bg-white">
         <div className="lg:hidden flex flex-col gap-y-4 justify-center items-center ">
           <svg
             viewBox="0 0 673 1200"

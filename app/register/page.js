@@ -112,7 +112,7 @@ function Reg() {
   };
 
   return (
-    <section className="bg-white dark:bg-primary">
+    <section className="bg-black dark:bg-primary">
       <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
         <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
           <img
@@ -126,7 +126,7 @@ function Reg() {
               <img alt="" src="logo1.png" width={120} height={90} />
             </a>
             <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-              Welcome to Muscle builder
+              Wlcome to Muscl builder
             </h2>
             <p className="mt-4 leading-relaxed text-white/90"></p>
           </div>
@@ -139,9 +139,10 @@ function Reg() {
                 href="#"
               >
                 <span className="sr-only">Home</span>
-                <img alt="" src="logo1.png" width={120} height={90} />
+                <img alt="" src="logo1.png" width={120} height={90} 
+                className="bg-black rounded-full"/>
               </a>
-              <h1 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl dark:text-white">
+              <h1 className="mt-2 text-2xl font-bold text-white sm:text-3xl md:text-4xl dark:text-white">
                 Welcome to Muscle builder
               </h1>
               <p className="mt-4 leading-relaxed text-white dark:text-white">
@@ -149,7 +150,7 @@ function Reg() {
               </p>
             </div>
             <form onSubmit={handleSubmit} className="mt-10 grid grid-cols-6 gap-10">
-              <div className="col-span-6 ">
+              <div className="col-span-6 bg-white">
                 <label
                   htmlFor="name"
                   className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 dark:border-white dark:bg-white"
@@ -162,16 +163,16 @@ function Reg() {
                     id="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm dark:text-black"
+                    className="text-black peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm dark:text-black"
                   />
                   {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
                 </label>
               </div>
 
-              <div className="col-span-6 ">
+              <div className="col-span-6 bg-white ">
                 <label
                   htmlFor="email"
-                  className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 dark:border-white dark:bg-white"
+                  className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 dark:border-white text-white  "
                 >
                   <span class="absolute start-3 top-3 -translate-y-1/2 text-xs text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-3 peer-focus:text-xs dark:text-black">
                     Email
@@ -181,12 +182,12 @@ function Reg() {
                     id="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm dark:text-black"
+                    className="text-black peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm dark:text-black"
                   />
                   {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
                 </label>
               </div>
-              <div className="col-span-6 sm:col-span-3">
+              <div className="col-span-6 sm:col-span-3 bg-white">
                 <label
                   htmlFor="password"
                   className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 dark:border-white dark:bg-white"
@@ -199,14 +200,14 @@ function Reg() {
                     id="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm dark:text-black"
+                    className="text-black peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm dark:text-black"
                   />
                   {errors.password && (
                     <p className="text-red-500 text-xs mt-1">{errors.password}</p>
                   )}
                 </label>
               </div>
-              <div className="col-span-6 sm:col-span-3">
+              <div className="col-span-6 sm:col-span-3 bg-white">
                 <label
                   htmlFor="passwordConfirmation"
                   className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-3 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-white dark:border-gray-700 dark:bg-white"
@@ -219,7 +220,7 @@ function Reg() {
                     id="passwordConfirmation"
                     value={passwordConfirmation}
                     onChange={(e) => setPasswordConfirmation(e.target.value)}
-                    className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm dark:text-black"
+                    className="text-black peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm dark:text-black"
                   />
                   {errors.confirmPassword && (
                     <p className="text-red-500 text-xs mt-1">{errors.confirmPassword}</p>
@@ -234,9 +235,9 @@ function Reg() {
                     name="marketing_accept"
                     checked={marketingAccept}
                     onChange={(e) => setMarketingAccept(e.target.checked)}
-                    className="size-5 rounded-md border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:focus:ring-offset-gray-900"
+                    className="size-5 rounded-md border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:focus:ring-offset-gray-900 text-white"
                   />
-                  <span className="text-sm text-gray-700 dark:text-gray-200">
+                  <span className="text-sm text-white dark:text-gray-200">
                     I want to receive emails about events, product updates and company
                     announcements.
                   </span>

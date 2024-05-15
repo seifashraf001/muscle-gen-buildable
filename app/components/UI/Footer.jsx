@@ -27,14 +27,14 @@ function Footer() {
           </Link>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 text-white">
           <div className="text-center sm:text-left">
-            <p className="text-lg font-medium text-gray-900 dark:text-white">Workout Plans</p>
+            <p className="text-lg font-medium text-white dark:text-white">Workout Plans</p>
 
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"
                   href="https://www.verywellfit.com/complete-beginners-guide-to-strength-training-1229585"
                   target="_blank"
 
@@ -47,7 +47,7 @@ function Footer() {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"
                   href="https://www.medicalnewstoday.com/articles/cardio-exercises-at-home#best-at-home-cardio"
                   target="_blank"
 
@@ -58,7 +58,7 @@ function Footer() {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"
                   href="https://www.tpoftampa.com/yoga-and-meditation-benefits-and-differences/"
                 
                   target="_blank"
@@ -69,7 +69,7 @@ function Footer() {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"
                   href="https://orthoinfo.aaos.org/en/staying-healthy/flexibility-exercises-for-young-athletes/"
                   target="_blank"
 
@@ -81,12 +81,12 @@ function Footer() {
           </div>
 
           <div className="text-center sm:text-left">
-            <p className="text-lg font-medium text-gray-900 dark:text-white">Nutrition</p>
+            <p className="text-lg font-medium text-white dark:text-white">Nutrition</p>
 
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"
                   href="https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/"
                   target="_blank"
 
@@ -97,7 +97,7 @@ function Footer() {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"
                   href="https://tastesbetterfromscratch.com/category/meal-plan/"
                   target="_blank"
 
@@ -108,7 +108,7 @@ function Footer() {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"
                   href="https://www.webmd.com/vitamins/index"
                   target="_blank"
 
@@ -119,7 +119,7 @@ function Footer() {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"
                   href="https://familydoctor.org/hydration-why-its-so-important/"
                   target="_blank"
 
@@ -131,12 +131,12 @@ function Footer() {
           </div>
 
           <div className="text-center sm:text-left">
-            <p className="text-lg font-medium text-gray-900 dark:text-white">Community</p>
+            <p className="text-lg font-medium text-white dark:text-white">Community</p>
 
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"
                   href="https://the-fitness-forum.com/"
                   target="_blank"
 
@@ -148,7 +148,7 @@ function Footer() {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"
                   href="https://www.timeoutdoors.com/challenges"
                   target="_blank"
 
@@ -160,12 +160,12 @@ function Footer() {
           </div>
 
           <div className="text-center sm:text-left">
-            <p className="text-lg font-medium text-gray-900 dark:text-white">Contact Us</p>
+            <p className="text-lg font-medium text-white dark:text-white">Contact Us</p>
 
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <Link
-                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"
                   href="/contactus"
                 >
                   Support
@@ -174,7 +174,7 @@ function Footer() {
 
               <li>
                 <Link
-                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"
                   href="/faqs"
                 >
                   FAQs
@@ -183,7 +183,7 @@ function Footer() {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+                  className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"
                   href="/DeveloperPage"
                 >
                   Dev

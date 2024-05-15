@@ -46,6 +46,7 @@ const Team = () => {
   }, []);
 
   return (
+    <section className="bg-black">
     <div className="container">
       <div className="icon">
         {teamMembers.map((member, index) => (
@@ -97,7 +98,9 @@ const Team = () => {
           </div>
         ))}
       </div>
+
     </div>
+    </section>
   );
 };
 

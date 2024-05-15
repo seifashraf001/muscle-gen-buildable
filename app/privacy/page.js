@@ -4,7 +4,7 @@ import "./page.css"
 export default function Page() {
   return (
     
-    <div className="max-w-4xl mx-auto px-6 py-12">
+    <div className="max-w-4xl mx-auto px-6 py-12 bg-black">
       <h1 className="text-4xl font-bold text-center mb-8 text-white">Privacy Policy</h1>
       <div className="content bg-black text-gray-200 shadow-lg rounded-lg px-8 py-6 mb-8">
       <p className="mb-4">

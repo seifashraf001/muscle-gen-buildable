@@ -4,7 +4,7 @@ import faqData from "../mock/faqData.json";
 
 const GymFAQs = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center">
+    <div className="flex min-h-screen items-center justify-center bg-black">
     <section className="px-40">
     <div className=" text-center">
 

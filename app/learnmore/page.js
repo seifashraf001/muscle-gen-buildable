@@ -5,7 +5,7 @@ const LearnMorePage = () => {
 
     
   return (
-    <div className="min-h-screen py-10">
+    <div className="min-h-screen py-10 bg-black">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-red-600 via-red-500 to-orange-400 text-transparent bg-clip-text italic">Learn More</h1>
         <div className="flex flex-col items-center justify-center sm:flow-col md:space-x-6">

@@ -3,7 +3,7 @@ import './page.css';
 
 function Chest() {
   return (
-<div className='flex w-full justify-center py-11 gap-14 flex-wrap '>
+<div className='flex bg-black w-full justify-center py-11 gap-14 flex-wrap '>
       <div className='rounded-2xl  w-[400px] overflow-hidden shadow-md shadow-white content
       max-sm:w-[400px] max-sm:ml-5 max-sm:mr-5 max-sm:mx-auto
       '>        <img className='h-[300px] w-[600px]'   src='https://fitnessprogramer.com/wp-content/uploads/2022/02/Barbell-Muscle-Snatch.gif' />

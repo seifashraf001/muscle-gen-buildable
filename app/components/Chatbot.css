@@ -1,0 +1,303 @@
+body {
+  font-family: 'Fira Code','Fira Code';
+  background: #d0d4d9;
+}
+@keyframes changeShadow {
+  0% {
+    box-shadow: 0 0 50px rgb(255, 140, 0);
+  }
+  25% {
+    box-shadow: 0 0 50px rgb(255, 255, 255); 
+  }
+  50% {
+    box-shadow: 0 0 50px #ff0000; 
+  }
+  75% {
+    box-shadow: 0 0 50px #ffffff; 
+  }
+  100% {
+    box-shadow: 0 0 50px rgb(255, 154, 32); 
+  }
+}
+
+.container {
+  width: 400px;
+  position: absolute;
+  top: calc(50% - 70px); /* Adjust as needed */
+  left: 30px; /* Adjust as needed */
+  transform: translateX(225%);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: #00000093 0px 7px 29px 0px;
+  background: #000000;
+}
+
+.container:hover {
+  animation: changeShadow 2s infinite; 
+}
+
+
+/* Set initial state for the container */
+.container.hidden {
+  transform: translateX(200%);
+}
+
+.container.visible {
+  transform: translateX(-50); /* Move the container to its original position */
+}
+.chatbot-container {
+  position: relative;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.star {
+  cursor: pointer;
+  font-size: 45px;
+  color: #ccc;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.star:hover {
+  color: yellow; /* Change color to yellow on hover */
+}
+
+.star.selected {
+  color: yellow; /* Keep selected stars yellow */
+}
+
+.rating-text {
+  margin-left: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bolder;
+  background: linear-gradient(to right, rgb(127, 5, 16), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  position: relative; /* Ensure correct stacking context */
+  z-index: 9999; /* Ensure it appears on top */
+}
+
+
+.chat {
+  height: 400px;
+  overflow-y: scroll;
+  margin: 20px 0;
+  padding: 10px;
+  border: 2px solid #d7d0c9;
+  border-radius: 5px;
+  background: #292727;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.user {
+  justify-content: flex-end;
+}
+
+.bot {
+  justify-content: flex-start;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.user .avatar {
+  order: 1;
+  background: url("/muscles-generator-1/public/logo1.png");
+  background-size: cover;
+}
+
+.bot .avatar {
+  order: 1;
+  background: url("/muscles-generator-1/public/Chatbot.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.user .text {
+  background: #4a4d52;
+}
+
+.bot .text {
+  background: #4a4d52;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #cbcbce;
+  border-radius: 5px;
+  outline: none;
+  font-size: 20px;
+}
+
+.input:focus {
+  border-color: #8296d0;
+  color: #484b4b;
+}
+/* Button styles */
+.button {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transition for background-color, color, and transform */
+}
+
+/* Clicked state for the button */
+.button.sent .gradient-label {
+  /* Add your styles for the "Sent" button text here */
+  color: #000000; /* For example, change text color to white */
+}
+
+
+/* Container for centering the button */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height to center vertically */
+}
+
+.button .gradient-label {
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(to right, rgb(127, 5, 16), rgb(255, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.button:hover {
+  box-shadow: rgba(230, 24, 24, 0.7);
+}
+
+.chat::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat::-webkit-scrollbar-thumb {
+  background: #444d66;
+  border-radius: 50%; /* Use percentage value for responsiveness */
+}
+
+
+
+.blzvQB {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #BF1E28;
+  color: #ffffff;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: help;
+  padding: 15px;
+  transition: all 0.3s ease;
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  font-size: 20px;
+  z-index: 2147483647;
+}
+
+.blzvQB .icon {
+  width: 55px; /* Set the width to a percentage value */
+  max-width: 40px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 1px;
+}
+
+/* Add hover effects */
+.blzvQB:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add some text styles */
+.blzvQB span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.blzvQB:active {
+  transform: translateY(0); /* Reset translateY when button is clicked */
+  box-shadow: none; /* Reset box shadow when button is clicked */
+}
+
+
+
+.blzvQB .hover-text {
+  display: none;
+}
+
+.blzvQB:hover .default-text {
+  display: none;
+}
+
+.blzvQB:hover .hover-text {
+  display: inline;
+}
+
+.blzvQB {
+  display: fixed;
+  -webkit-box-align: center;
+  align-items: center;
+  float: right;
+  border-radius: 30px 8px 30px 30px;
+  background-image: linear-gradient(to right, rgb(127,5,16), rgb(255,0,0)); /* Change the gradient colors as needed */
+  box-shadow: none;
+  color: rgb(255, 255, 255);
+  z-index: 2147483647;
+  cursor: pointer;
+  padding: 8px;
+  transition: all 0.1s ease-out 0s;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.text-content.hidden {
+  display: none; /* Hide the container by default */
+  position: fixed;
+  bottom: 50px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  z-index: 1000; /* Adjust as needed */
+}
+
+.text-content.visible {
+  display:flex;
+}

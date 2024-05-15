@@ -3,9 +3,9 @@ import "./card.css";
 
 const Card = () => {
   return (
-    <div className='flex w-full justify-center py-11 gap-14 flex-wrap '>
-      <div className='rounded-2xl  w-[400px] overflow-hidden shadow-md shadow-white content max-sm:w-[400px] max-sm:ml-5 max-sm:mr-5 max-sm:mx-auto'>
-        <img className='h-[300px] w-[600px] max-sm:h-'  src='/img0.png' />
+    <div className='flex w-full justify-center py-11 gap-10 flex-wrap bg-black '>
+      <div className='rounded-2xl  w-[300px] overflow-hidden shadow-md shadow-white content max-sm:w-[400px] max-sm:ml-5 max-sm:mr-5 max-sm:mx-auto'>
+        <img className='h-[250px] w-[450px] max-sm:h-'  src='/img0.png' />
 
         <div className='p-7 text-xl text-white'> 
           <h1 className='font-extrabold mb-3.5 max-sm:text-[1.1rem]'>Cardio</h1>
@@ -34,8 +34,8 @@ const Card = () => {
         </div>
       </div>
 
-      <div className='rounded-2xl  w-[400px] overflow-hidden shadow-md shadow-white content max-sm:w-[400px] max-sm:ml-5 max-sm:mr-5 max-sm:mx-auto'>
-        <img className='h-[300px] w-[600px]' src='/img01.png' />
+      <div className='rounded-2xl  w-[300px] overflow-hidden shadow-md shadow-white content max-sm:w-[400px] max-sm:ml-5 max-sm:mr-5 max-sm:mx-auto'>
+        <img className='h-[250px] w-[450px]' src='/img01.png' />
 
         <div className='p-7 text-xl text-white'> 
           <h1 className='font-extrabold mb-3.5 max-sm:text-[1.1rem]'>Body Building</h1>
@@ -64,8 +64,8 @@ const Card = () => {
         </div>
       </div>
 
-      <div className='rounded-2xl  w-[400px] overflow-hidden shadow-md shadow-white content max-sm:w-[400px] max-sm:ml-5 max-sm:mr-5 max-sm:mx-auto'>
-        <img className='h-[300px] w-[600px]' src='/img02.png' />
+      <div className='rounded-2xl  w-[300px] overflow-hidden shadow-md shadow-white content max-sm:w-[400px] max-sm:ml-5 max-sm:mr-5 max-sm:mx-auto'>
+        <img className='h-[250px] w-[450px]' src='/img02.png' />
 
         <div className='p-7 text-xl text-white'> 
           <h1 className='font-extrabold mb-3.5 max-sm:text-[1.1rem]'>Calisthenics</h1>
@@ -78,7 +78,7 @@ const Card = () => {
             </p>
           </div>
 
-          <div className='mt-2 text-center'>
+          <div className='mt-9 text-center'>
           <a
                   className="rounded-md transition bg-gradient-to-r mx-sm:px-4 max-sm:py-1.5 max-sm:text-sm
                   from-red-900 via-red-700 to-orange-700 px-5 py-2.5 text-lg font-bold text-white shadow
@@ -92,8 +92,8 @@ const Card = () => {
         </div>
       </div>
 
-      <div className='rounded-2xl  w-[400px] overflow-hidden shadow-md shadow-white content max-sm:w-[400px] max-sm:ml-5 max-sm:mr-5 max-sm:mx-auto'>
-        <img className='h-[300px] w-[600px]'  src='/img03.png' />
+      <div className='rounded-2xl  w-[300px] overflow-hidden shadow-md shadow-white content max-sm:w-[400px] max-sm:ml-5 max-sm:mr-5 max-sm:mx-auto'>
+        <img className='h-[250px] w-[450px]'  src='/img03.png' />
         <div className='p-7 text-xl text-white'> 
           <h1 className='font-extrabold mb-3.5 max-sm:text-[1.1rem]'>Mobility</h1>
 

@@ -2,7 +2,7 @@ import React from "react";
 
 function price() {
   return (
-    <div className="w-auto flex px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 justify-center">
+    <div className="w-auto flex px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 justify-center bg-black">
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 sm:items-stretch md:grid-cols-3">
         <div className="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-sm">
           <div className="p-6 sm:px-8">

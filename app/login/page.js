@@ -86,8 +86,10 @@ function Login() {
   }
 
   return (
-    <div className="mx-auto max-w-screen-xl px-4 py-20 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-lg content rounded-lg">
+
+    <section className='bg-black'>
+    <div className="mx-auto max-w-screen-xl px-4 py-20 sm:px-6 lg:px-8 bg-black">
+      <div class="mx-auto max-w-lg content rounded-lg ">
           <h1 className="text-center text-2xl font-bold bg-gradient-to-r from-orange-300 via-red-700 to-red-900 text-transparent bg-clip-text sm:text-3xl">
             Get started
           </h1>
@@ -115,7 +117,7 @@ function Login() {
                   name="email"
                   value={email}
                   onChange={handleChange}
-                  className="w-full rounded-lg border-white p-4 pe-12 text-sm shadow-sm"
+                  className="w-full rounded-lg border-white text-black p-4 pe-12 text-sm shadow-sm"
                   placeholder="Enter email"
                 />
 
@@ -149,7 +151,7 @@ function Login() {
               name="password"
               value={password}
               onChange={handleChange}
-              className="w-full rounded-lg border-white p-4 pe-12 text-sm shadow-sm"
+              className="w-full rounded-lg border-white text-black p-4 pe-12 text-sm shadow-sm"
               placeholder="Enter password"
             />
             <button
@@ -189,6 +191,9 @@ function Login() {
           </form>
       </div>
     </div>
+    </section>
+
+
   );
 }
 

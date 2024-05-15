@@ -3,6 +3,10 @@
     box-shadow: 0 0 10px rgb(255, 0, 0);
     transition: box-shadow 0.3s ease-in-out; /* Only transition the box-shadow */
   }
+
+  li {
+    list-style: none;
+  }
   
   @keyframes changeShadow {
     0% {

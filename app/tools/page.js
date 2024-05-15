@@ -197,8 +197,9 @@ function CalorieCalculator() {
   };
 
   return (
-    <div className="container mx-auto mt-10">
-      <div className="max-w-md mx-auto">
+    <section className='bg-black'>
+          <div className="container mx-auto mt-10 bg-black">
+      <div className="max-w-md mx-auto bg-black">
         <div className="content bg-black shadow-md rounded px-8 pt-6 pb-10 mb-4">
           <h1 className="antialiased font-semibold relative text-center text-3xl bg-gradient-to-r from-red-600 via-red-500 to-orange-400 text-transparent bg-clip-text"> Calorie Calculator </h1>
 
@@ -308,6 +309,7 @@ function CalorieCalculator() {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

@@ -31,7 +31,7 @@ function Footer() {
           <div className="text-center sm:text-left">
             <p className="text-lg font-medium text-white dark:text-white">Workout Plans</p>
 
-            <ul className="mt-8 space-y-4 text-sm">
+            <ul className="mt-8 space-y-4 text-sm ">
               <li>
                 <a
                   className="text-white transition hover:text-white/75 dark:text-white dark:hover:text-white/75"

@@ -1,7 +1,9 @@
 'use client'
-import Image from 'next/image';
-import './page.css'
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { useSession } from 'next-auth/react';
+import Image from 'next/image';
+import './page.css';
 
 const foods = [
   { id: 1, name: 'Grilled Chicken Salad', calories: 350 , image: './Food/Grilled Chicken Salad.jpeg'  },
@@ -30,7 +32,9 @@ const foods = [
   { id: 24, name: 'Salmon with Asparagus', calories: 380, protein: 35, carbs: 10, fats: 22,image:'./Food/Salmon with Asparagus.jpeg' },
 ];
 
+
 const CalorieCalculator = () => {
+  const { data: session } = useSession();
   const [calories, setCalories] = useState('');
   const [goal, setGoal] = useState('');
   const [selectedFood, setSelectedFood] = useState(null);
@@ -40,25 +44,47 @@ const CalorieCalculator = () => {
   const [totalCalories, setTotalCalories] = useState(0);
   const [calorieDifference, setCalorieDifference] = useState(0);
   const [error, setError] = useState('');
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+
+  useEffect(() => {
+    if (session?.user?.id) {
+      fetchUserData(session.user.id);
+    }
+  }, [session]);
 
   useEffect(() => {
     calculateTotalCalories();
     calculateCalorieDifference();
   }, [selectedFoodEntries, calories, goal]);
 
+  const fetchUserData = async (userId) => {
+    try {
+      const response = await axios.get(`https://muscles-gen.onrender.com/api/foods?user=${userId}`);
+      if (response.data.length > 0) {
+        const userData = response.data[0];
+        setCalories(userData.calorieIntake);
+        setGoal(userData.goal);
+        setSelectedFoodEntries(userData.foods.map(food => ({
+          food: foods.find(f => f.name === food.name),
+          grams: food.grams,
+        })));
+      }
+    } catch (err) {
+      console.error('Error fetching user data:', err);
+    }
+  };
+
   const calculateTotalCalories = () => {
     let currentCalories = 0;
-
     selectedFoodEntries.forEach((entry) => {
-      currentCalories += entry.grams * (entry.food.calories / 100); // Divide calories by 100 to get calories per gram
+      currentCalories += entry.grams * (entry.food.calories / 100);
     });
-
     setTotalCalories(currentCalories);
   };
 
   const calculateCalorieDifference = () => {
     if (calories && goal) {
-      const goalCalories = goal === 'loseWeight' ? calories : calories * 1.2; // Adjust calorie intake based on goal
+      const goalCalories = goal === 'loseWeight' ? calories : calories * 1.2;
       const currentCalories = totalCalories;
       setCalorieDifference(goalCalories - currentCalories);
     }
@@ -85,11 +111,41 @@ const CalorieCalculator = () => {
 
   const handleCaloriesChange = (e) => {
     setCalories(e.target.value);
-    setError(''); // Clear any previous errors when calories are updated
+    setError('');
   };
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
+  };
+
+  const handleSave = async () => {
+    if (!calories || !goal || selectedFoodEntries.length === 0) {
+      setError('Please enter all details and add at least one food item.');
+      return;
+    }
+
+    const foodEntries = selectedFoodEntries.map((entry) => ({
+      name: entry.food.name,
+      grams: entry.grams,
+      calories: entry.food.calories,
+    }));
+
+    const Data = {
+      calorieIntake: parseInt(calories),
+      goal,
+      foods: foodEntries,
+      totalCalories,
+      remainingCalories: calorieDifference,
+      user: session?.user?.id || '',
+    };
+
+    try {
+      const response = await axios.post('https://muscles-gen.onrender.com/api/foods', Data);
+      setShowSuccessMessage(true);
+      console.log('Data saved:', response.data);
+    } catch (err) {
+      console.error('Error saving data:', err);
+    }
   };
 
   const filteredFoods = foods.filter((food) =>
@@ -100,83 +156,98 @@ const CalorieCalculator = () => {
     <div className="p-4 text-white bg-black">
       <h1 className="text-3xl font-bold mb-4 text-center bg-gradient-to-r from-red-900 via-red-500 to-orange-500 bg-clip-text  text-transparent sm:text-5xl">Meals Calories</h1>
       <div class='flex gap-6 justify-center flex-wrap max-sm:gap-2'>
-      <div class="flex flex-col sm:flex-row items-center">
-        <input
-          type="number"
-          placeholder="Enter your daily calorie intake"
-          value={calories}
-          onChange={handleCaloriesChange}
-          class="p-2 border border-none rounded bg-white text-black hover:bg-gray-200 transition"
-        />
-      </div>
-      <div class="flex flex-col sm:flex-row items-center">
-        <select
-          value={goal}
-          onChange={(e) => setGoal(e.target.value)}
-          class="p-2 border border-gray-300 rounded white text-black hover:bg-gray-200 transition"
-        >
-          <option value="">Select goal</option>
-          <option value="loseWeight">Lose Weight</option>
-          <option value="gainWeight">Gain Weight</option>
-        </select>
-      </div>
-  <div class="flex flex-col sm:flex-row items-center">
-    <div className='flex max-md:justify-center'>
-    <input type="text" placeholder="Search..." value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="px-4 py-2 rounded-l-lg border-gray-300 text-black focus:outline-none w-[50%]"
+        <div class="flex flex-col sm:flex-row items-center">
+          <input
+            type="number"
+            placeholder="Enter your daily calorie intake"
+            value={calories}
+            onChange={handleCaloriesChange}
+            class="p-2 border border-none rounded bg-white text-black hover:bg-gray-200 transition"
           />
-    <button className="bg-primary2 text-white px-4 py-2  rounded-r-lg hover:opacity-90" onClick={() => setSearchTerm('')}> Clear </button>
-    </div>
-  </div>
-</div>
-
-<div className='flex justify-center mt-12'>
-<div class='w-full md:w-[30%] overflow-x-auto'>
-  <table class="min-w-full text-left text-sm font-light">
-    <thead class="border-b font-medium dark:border-neutral-500">
-      <tr>
-        <th scope="col" class="px-3 py-4">Selected Food</th>
-        <th scope="col" class="px-3 py-4">Total Calories</th>
-        <th scope="col" class="px-3 py-4">Remaining Calories</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
-        <td class="whitespace-nowrap px-4 py-5">
-          <ul style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-            {selectedFoodEntries.map((entry, index) => (
-              <li key={index} class="mb-2 md:mb-0 md:mr-4" style={{ flex: '1 1 auto' }}>
-                <button onClick={() => handleRemoveFood(index)}>
-                  <Image src='/cross.png' class='mr-2' width={18} height={18} />
-                </button>
-                <span>{entry.food.name} - {entry.grams} grams</span>
-              </li>
-            ))}
-          </ul>
-        </td>
-        <td class="whitespace-nowrap px-4">
-          {totalCalories > 0 && (
-            <p>{totalCalories}</p>
-          )}
-        </td>
-        <td class="whitespace-nowrap px-4 py-4">
-          {calorieDifference !== 0 && (
-            <p>{calorieDifference}</p>
-          )}
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
-</div>
-<div >
-      {error && <p className="text-red-500">{error}</p>}
+        </div>
+        <div class="flex flex-col sm:flex-row items-center">
+          <select
+            value={goal}
+            onChange={(e) => setGoal(e.target.value)}
+            class="p-2 border border-gray-300 rounded white text-black hover:bg-gray-200 transition"
+          >
+            <option value="">Select goal</option>
+            <option value="loseWeight">Lose Weight</option>
+            <option value="gainWeight">Gain Weight</option>
+          </select>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center">
+          <div className='flex max-md:justify-center'>
+            <input type="text" placeholder="Search..." value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="px-4 py-2 rounded-l-lg border-gray-300 text-black focus:outline-none w-[50%]"
+            />
+            <button className="bg-primary2 text-white px-4 py-2  rounded-r-lg hover:opacity-90" onClick={() => setSearchTerm('')}> Clear </button>
+          </div>
+        </div>
       </div>
 
-      <h2 className="text-2xl font-semibold text-center my-5">Meals</h2>
+      <div className='flex justify-center mt-12'>
+        <div class='w-full md:w-[30%] overflow-x-auto'>
+          <table class="min-w-full text-left text-sm font-light">
+            <thead class="border-b font-medium dark:border-neutral-500">
+              <tr>
+                <th scope="col" class="px-3 py-4">Selected Food</th>
+                <th scope="col" class="px-3 py-4">Total Calories</th>
+                <th scope="col" class="px-3 py-4">Remaining Calories</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-neutral-500 dark:hover:bg-neutral-600">
+                <td class="whitespace-nowrap px-4 py-5">
+                  <ul style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+                    {selectedFoodEntries.map((entry, index) => (
+                      <li key={index} class="mb-2 md:mb-0 md:mr-4" style={{ flex: '1 1 auto' }}>
+                        <button onClick={() => handleRemoveFood(index)}>
+                          <Image src='/cross.png' class='mr-2' width={18} height={18} />
+                        </button>
+                        <span>{entry.food.name} - {entry.grams} grams</span>
+                      </li>
+                    ))}
+                  </ul>
+                </td>
+                <td class="whitespace-nowrap px-4">
+                  {totalCalories > 0 && (
+                    <p>{totalCalories}</p>
+                  )}
+                </td>
+                <td class="whitespace-nowrap px-4 py-4">
+                  {calorieDifference !== 0 && (
+                    <p>{calorieDifference}</p>
+                  )}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="mt-8 flex justify-center">
+        <button onClick={handleSave} class="bg-primary2 text-white px-6 py-3 rounded-lg hover:opacity-90">
+          Save
+        </button>
+      </div>
+
+      {showSuccessMessage && (
+        <div className="text-green-500 text-center mt-4">
+          <p>Data saved successfully!</p>
+        </div>
+      )}
+
+      {error && (
+        <div class="mt-4 text-red-500 text-center">
+          <p>{error}</p>
+        </div>
+      )}
+
+
+<h2 className="text-2xl font-semibold text-center my-5">Meals</h2>
       <div className="mb-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {filteredFoods.map((food) => (
@@ -210,10 +281,14 @@ const CalorieCalculator = () => {
         </div>
       </div>
 
+     
+
     </div>
   );
 };
 
+
 export default CalorieCalculator;
+
 
 
